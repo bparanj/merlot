@@ -64,3 +64,9 @@ This may not be required. Since Google ranking algorithm penalizes same IP used 
 
 
 See the attached basecamp.zip. It contains the html and css. CCL-External-Layout.pdf must have the same look and feel as the AdminLayout.jpg
+
+
+
+COMMANDS
+
+sudo /etc/init.d/apache2 restart
