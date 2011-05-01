@@ -47,6 +47,8 @@ GEM
     mime-types (1.16)
     orm_adapter (0.0.4)
     polyglot (0.3.1)
+    pony (1.2)
+      mail (> 2.0)
     rack (1.2.2)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
@@ -82,6 +84,7 @@ PLATFORMS
 
 DEPENDENCIES
   devise
+  pony
   rails (= 3.0.7)
   sqlite3
   unicorn
