@@ -1,0 +1,66 @@
+1) Scan it and post it on Elance project
+2) Evaluate open source CMS
+3) How to change the root password for mysql (Change database.yml ?)
+You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
+4) Cancel Brightbox account
+5) Moonshine recipe for Amazon backups
+
+# cat /root/my.cnf
+[client]
+password        = <secret>
+
+You can chmod this file 600 so only root can read it.
+
+
+
+1) Right section - Google Ads
+2) Horizontal Navigation : 
+	Home (Recent Articles), 
+	Categories ( Book Reviews), 
+	Submit Articles, 
+	Login, 
+	Contact
+3) Left section - Categories
+4) Google analytics
+
+Internal
+
+1) Roles: Editor, Writer, Contributor, Admin. Create users. Publish articles
+2) Publish at a certain date
+3) Only admin can delete articles
+
+
+Become an Author - Benefits:
+
+1) Link to your site. Your profile. Enhanced credibility. Highly-Targeted Traffic.
+
+Email: Writing guidelines, themes, topics, keywords, categories. Training video on how to use the
+publishing platform.
+
+
+
+Version 2
+
+1) Search feature
+2) Sell leads through Commission Junction
+3) News tab
+4) Tags
+5) RSS feeds
+
+Editorial guidelines: http://ezinearticles.com/editorial-guidelines.html
+
+
+Secret URLs
+
+'Sign up as Admin' : http://localhost:8080/admin/sign_up
+'Sign in as Admin' : http://localhost:8080/admin/sign_in
+
+
+DO NOT DO
+
+1) SEO fields in the form - not required
+2) Followup with Moonshine Google group to check how to deploy multiple virtual hosts.
+This may not be required. Since Google ranking algorithm penalizes same IP used by several domains.
+
+
+See the attached basecamp.zip. It contains the html and css. CCL-External-Layout.pdf must have the same look and feel as the AdminLayout.jpg

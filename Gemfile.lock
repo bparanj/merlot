@@ -29,16 +29,23 @@ GEM
       activesupport (= 3.0.7)
     activesupport (3.0.7)
     arel (2.0.9)
+    bcrypt-ruby (2.1.4)
     builder (2.1.2)
+    devise (1.3.3)
+      bcrypt-ruby (~> 2.1.2)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.0.3)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.5.0)
+    kgio (2.3.3)
     mail (2.2.19)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    orm_adapter (0.0.4)
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -64,10 +71,17 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.27)
+    unicorn (3.6.1)
+      kgio (~> 2.3)
+      rack
+    warden (1.0.3)
+      rack (>= 1.0.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  devise
   rails (= 3.0.7)
   sqlite3
+  unicorn

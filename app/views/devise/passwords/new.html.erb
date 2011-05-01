@@ -1,0 +1,24 @@
+
+<div class="login"> 
+	<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+	  <h2>Can't sign in? Forgot your password?</h2> 
+	<p>Enter your email address below and we'll send you password reset instructions.</p>
+	
+	
+	
+	  <%= devise_error_messages! %>
+	  <%= f.text_field :email %><br/><br/>
+	  <%= f.submit "Send me reset password instructions" %>
+	  <br/>	  <br/>
+	 <div class="extras"> 
+	      Nevermind, <%= link_to "send me back to the sign in screen", new_user_session_path %>
+	  </div>
+	<% end %>
+
+</div>
+
+ <div> 
+  <h3>A note about spam filters</h3> 
+  If you don't get an email from us within a few minutes please be sure to check your spam filter.
+  <strong> The email will be coming from do-not-reply@creditcardslogic.com</strong> 
+</div>
