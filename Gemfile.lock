@@ -45,6 +45,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mysql2 (0.3.2)
     orm_adapter (0.0.4)
     polyglot (0.3.1)
     pony (1.2)
@@ -84,6 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   devise
+  mysql2
   pony
   rails (= 3.0.7)
   sqlite3
