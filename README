@@ -3,9 +3,15 @@ You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
 2) Moonshine recipe for Amazon backups
 3) Test Moonshine recipe for Virtual hosts 
 4) Tango calendar and Pollen Allergy Alert apps deployed as virtual hosts on the same Linode instance
+5) Image album for use in (Real Estate site, Child / Pet adoption site etc). Zip code based search.
+6) Track Indian Restaurants and grade on authenticity
+7) Scaled down version of pagerduty.com
+8) Ruby mentorship site. Connect companies, students and mentors
+9) Free recycling - zip based search (Connect People)
+10) Rezume.com blaster with viral email for free accounts
+11) Pizza parlour and Small restaurants CMS
 
-2 Public calendars free as a demo (Tango festival calendar and USA holidays), private calendars upto 5 is $5 / month. Use it to build habits, scheduling
-etc.
+2 Public calendars free as a demo (Tango festival calendar and USA holidays), private calendars upto 5 is $5 / month. Use it to build habits, scheduling, Tax deductible expenses etc.
 
 # cat /root/my.cnf
 [client]
