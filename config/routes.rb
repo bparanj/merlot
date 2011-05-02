@@ -1,4 +1,6 @@
 Merlot::Application.routes.draw do
+  resources :articles
+
   devise_for :users, :controllers => { :registrations => "registrations" }
   devise_for :admin
 

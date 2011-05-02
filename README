@@ -78,3 +78,8 @@ Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJ
 <% if user_signed_in? -%>
   <p><%= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token) %></p>
 <% end -%>
+
+
+Latest Commit Message:
+
+

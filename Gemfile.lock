@@ -39,6 +39,9 @@ GEM
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.5.0)
+    jquery-rails (0.2.7)
+      rails (~> 3.0)
+      thor (~> 0.14.4)
     kgio (2.3.3)
     mail (2.2.19)
       activesupport (>= 2.3.6)
@@ -80,6 +83,7 @@ GEM
       rack
     warden (1.0.3)
       rack (>= 1.0.0)
+    wymeditor (0.5.0.rc2)
 
 PLATFORMS
   ruby
@@ -87,8 +91,10 @@ PLATFORMS
 DEPENDENCIES
   cancan
   devise
+  jquery-rails
   mysql2 (< 0.3)
   pony
   rails (= 3.0.7)
   sqlite3
   unicorn
+  wymeditor

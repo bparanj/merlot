@@ -6,6 +6,8 @@ gem 'devise'
 gem 'pony'
 gem 'mysql2', '< 0.3'
 gem "cancan"
+gem "jquery-rails"
+gem "wymeditor"
 
 # Deploy with Capistrano
 # gem 'capistrano'
