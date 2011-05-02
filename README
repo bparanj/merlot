@@ -1,9 +1,11 @@
-1) Scan it and post it on Elance project
-2) Evaluate open source CMS
-3) How to change the root password for mysql (Change database.yml ?)
+1) How to change the root password for mysql (Change database.yml ?)
 You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
-4) Cancel Brightbox account
-5) Moonshine recipe for Amazon backups
+2) Moonshine recipe for Amazon backups
+3) Test Moonshine recipe for Virtual hosts 
+4) Tango calendar and Pollen Allergy Alert apps deployed as virtual hosts on the same Linode instance
+
+2 Public calendars free as a demo (Tango festival calendar and USA holidays), private calendars upto 5 is $5 / month. Use it to build habits, scheduling
+etc.
 
 # cat /root/my.cnf
 [client]
