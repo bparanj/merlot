@@ -16,7 +16,7 @@
         <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
       <%- end -%>
 			
-	  <p><%= link_to 'Home', root_path %> | <%= link_to 'Articles', articles_index_path %></p>
+	  <p><%= link_to 'Home', root_path %> | <%= link_to 'Articles', articles_path %></p>
 		<div id="user_login_box" style="float:right">
 	      <% if user_signed_in? -%>
 	          <%= current_user.email %> |
