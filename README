@@ -73,7 +73,7 @@ sudo /etc/init.d/apache2 restart
 
 
 
-Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJcNBERWsXA6OS57oWe8YjSBsmIkeIDpuSfnYpsSOC7BMJiEsm", :password => "secrethere", :password_confirmation => "secrethere" )
+Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJcNBERWsXA6OS57oWe8YjSBsmIkeIDpuSfnYpsSOC7BMJiEsm", :password => "123456", :password_confirmation => "123456" )
 
 <% if user_signed_in? -%>
   <p><%= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token) %></p>

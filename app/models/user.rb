@@ -27,3 +27,5 @@ class User < ActiveRecord::Base
     roles.include? role.to_s
   end
 end
+
+# TODO : After admin logins in redirect_to admin dashboard
