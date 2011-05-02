@@ -79,6 +79,7 @@ Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJ
   <p><%= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token) %></p>
 <% end -%>
 
+Make edit save a new version with a string column in the article to indicate who edited it.
 
 Latest Commit Message:
 
