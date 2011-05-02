@@ -1,0 +1,33 @@
+<div class="login">
+
+	
+<h2>Sign up</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+  <%= render "shared/error_messages", :target => resource %>  
+
+  <p><%= f.label :email %><br />
+  <%= f.email_field :email %></p>
+
+  <p><%= f.label :password %><br />
+  <%= f.password_field :password %></p>
+
+  <p><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></p>
+
+  <p>
+  	<%= f.label :roles %><br/>
+	<% for role in User::ROLES %>
+	  <%= check_box_tag "user[roles][]", role, @user.roles.include?(role) %>
+	  <%= h role.humanize %><br/>
+	<% end %>
+	<%= hidden_field_tag "user[roles][]" %>
+  </p>
+  <p><%= f.submit "Sign up" %></p>
+<% end %>
+
+</div>
+
+<strong>Help:</strong> <br/>
+<%= render :partial => "devise/shared/links" %>

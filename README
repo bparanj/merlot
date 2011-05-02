@@ -33,10 +33,10 @@ Internal
 Become an Author - Benefits:
 
 1) Link to your site. Your profile. Enhanced credibility. Highly-Targeted Traffic.
-
+2) Reach a wider audience and build your personal brands
+3) Experts in your field. 
 Email: Writing guidelines, themes, topics, keywords, categories. Training video on how to use the
 publishing platform.
-
 
 
 Version 2
@@ -70,3 +70,11 @@ See the attached basecamp.zip. It contains the html and css. CCL-External-Layout
 COMMANDS
 
 sudo /etc/init.d/apache2 restart
+
+
+
+Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJcNBERWsXA6OS57oWe8YjSBsmIkeIDpuSfnYpsSOC7BMJiEsm", :password => "secrethere", :password_confirmation => "secrethere" )
+
+<% if user_signed_in? -%>
+  <p><%= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token) %></p>
+<% end -%>

@@ -13,19 +13,19 @@
       <%- flash.each do |name, msg| -%>
         <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
       <%- end -%>
-			
-	  <p><%= link_to 'Home', root_path %> | <%= link_to 'Articles', "www.google.com" %></p>
-		<div id="user_login_box" style="float:right">
-	      <% if user_signed_in? -%>
-	          <%= current_user.email %> |
-	          <%= link_to 'My Profile', edit_user_registration_path %> |
-	          <%= link_to 'Sign out', destroy_user_session_path %>  |
-		  <% else %>
-			  <%= link_to 'Sign up', new_user_registration_path %> |
-		  	  <%= link_to 'Sign in', new_user_session_path %> |
-	      <% end -%>
-		 <%= link_to 'Contact', new_feedback_url %>
-	 	</div>
+
+	   <% if admin_signed_in? -%>
+	     <div id="admin_login_box" style="float:left">
+		    <p>
+				 <%= link_to 'Dashboard', admins_path %> | 
+				 <%= link_to 'Articles', "www.google.com" %> |
+		  		 <%= link_to 'Users', "www.google.com" %> |
+		  		 <%= link_to 'Profile', "www.google.com" %> |
+				 <%= link_to 'Logout', destroy_admin_session_path %>
+		  	 </p>
+          </div>
+		  <p>You are signed in as: <%= current_admin.email %></p>
+	    <% end -%>
 
       <div style="clear:both"></div>
 

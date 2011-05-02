@@ -5,6 +5,7 @@ gem 'sqlite3'
 gem 'devise'
 gem 'pony'
 gem 'mysql2', '< 0.3'
+gem "cancan"
 
 # Deploy with Capistrano
 # gem 'capistrano'
