@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  # TODO: #1 - Make edit save a new version with a string column in the article to indicate who edited it.
+  
   def index
     @articles = Article.all
   end

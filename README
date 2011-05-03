@@ -33,10 +33,8 @@ You can chmod this file 600 so only root can read it.
 
 Internal
 
-1) Roles: Editor, Writer, Contributor, Admin. Create users. Publish articles
-2) Publish at a certain date
-3) Only admin can delete articles
-
+1) Create user from admin dashboard. Publish articles
+2) All new users account should go through moderator queue (< 2 weeks)
 
 Become an Author - Benefits:
 
@@ -67,11 +65,8 @@ Secret URLs
 DO NOT DO
 
 1) SEO fields in the form - not required
-2) Followup with Moonshine Google group to check how to deploy multiple virtual hosts.
+2) Test how to deploy multiple virtual hosts using Moonshine
 This may not be required. Since Google ranking algorithm penalizes same IP used by several domains.
-
-
-See the attached basecamp.zip. It contains the html and css. CCL-External-Layout.pdf must have the same look and feel as the AdminLayout.jpg
 
 
 
@@ -87,7 +82,6 @@ Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJ
   <p><%= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token) %></p>
 <% end -%>
 
-Make edit save a new version with a string column in the article to indicate who edited it.
 
 Latest Commit Message:
 
