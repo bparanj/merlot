@@ -7,8 +7,11 @@ class ApplicationController < ActionController::Base
     redirect_to root_url
   end
   
+  protected
+  
   def layout_by_resource
-    if devise_controller? && resource_name == :admin
+    if admin_signed_in?
+      logger.info("Layout resource used is admin_layout")
       "admin_layout"
     else
       "application"
