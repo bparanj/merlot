@@ -11,33 +11,117 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <div id="container">
-      <%- flash.each do |name, msg| -%>
-        <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-      <%- end -%>
-			
-	  <p><%= link_to 'Home', root_path %> | <%= link_to 'Articles', articles_path %></p>
-		<div id="user_login_box" style="float:right">
-	      <% if user_signed_in? -%>
-	          <%= current_user.email %> |
-	          <%= link_to 'My Profile', edit_user_registration_path %> |
-	          <%= link_to 'Sign out', destroy_user_session_path %>  |
-		  <% else %>
-			  <%= link_to 'Sign up', new_user_registration_path %> |
-		  	  <%= link_to 'Sign in', new_user_session_path %> |
-	      <% end -%>
-		 <%= link_to 'Contact', new_feedback_url %>
-	 	</div>
 
-      <div style="clear:both"></div>
+<div id="Header">
+	<div class="navigation">&nbsp;</div>
+	<!-- TABS -->
+	<div id="Tabs">
+		<ul id="MainTabs">
+			<li>
+				<%= link_to 'Home', root_path %>
+			</li>
+			<li>
+				<%= link_to 'Articles', articles_path %>
+			</li>
+			<% if user_signed_in? -%>
+				<li>
+					<%= link_to 'My Profile', edit_user_registration_path %>
+				</li>
+				<li>
+					<%= link_to 'Sign out', destroy_user_session_path %>
+				</li>
+		    <% else %>
+				<li>
+				  <%= link_to 'Sign up', new_user_registration_path %> 			
+				</li>
+				<li>
+			  	  <%= link_to 'Sign in', new_user_session_path %>	
+				</li>
+	        <% end -%>
+			<li>
+				<%= link_to 'Contact', new_feedback_url %>
+			</li>
+		</ul>
+	</div>
+</div>
 
-      <%- if show_title? -%>
-        <h1><%=h yield(:title) %></h1>
-      <%- end -%>
+<%- flash.each do |name, msg| -%>
+  <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+<%- end -%>
 
-      <%= yield %>
-    </div>
+
+<div id="Wrapper" style="position: relative;">
+	<div class="container">
+		<div class="clearfix"></div>
+		<div class="fleft left-container">
+			<div class="left-content-container">
+				<h2>Categories</h2>
+				<div class="left-content">
+					<ul>
+						<li><a href="#">Test Category 1</a></li>
+						<li><a href="#">Test Category 2</a></li>
+						<li><a href="#">Test Category 3</a></li>
+						<li><a href="#">Test Category 4</a></li>
+						<li><a href="#">Test Category 5</a></li>
+						<li><a href="#">Test Category 6</a></li>
+						<li><a href="#">Test Category 7</a></li>
+						<li><a href="#">Test Category 8</a></li>
+						<li><a href="#">Test Category 9</a></li>
+					</ul>
+				</div>	
+				<br/>
+				<h2>Become a Member</h2>
+				<div class="left-content">
+					<ul>
+						<li>
+						<a href="#">Sign up</a> for free membership and get notifications for members only free Ruby and Rails screencasts. <a href="#">Privacy</a> 
+						</li>
+					</ul>
+				</div>
+				<br/>
+				<h2>Rails MeetUp</h2>
+				<div class="left-content">
+					If you live in the bay area, check out Silicon Valley Ruby Meetup 
+				</div>
+				
+			</div>		
+		</div>
+		<div class="fleft center-container">
+			<div class="center-content-container">
+				<div class="center-content">
+
+					  <%- if show_title? -%>
+					    <h1><%=h yield(:title) %></h1>
+					  <%- end -%>
+
+					  <%= yield %>
+
+				</div>	
+			</div>	
+		</div>
+		<div class="fleft right-container">
+			<div class="right-content-container">
+				<div class="right-content">
+					<h2>Recommend Me</h2>
+					<div>
+						some dummy text etc goes here
+					</div>
+					<br/>
+					<h2>Google Ads</h2>
+					<div>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
   </body>
 </html>
-
-

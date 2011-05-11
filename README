@@ -1,3 +1,8 @@
+Use admin_layout for admin screens.
+
+
+
+
 1) How to change the root password for mysql (Change database.yml ?)
 You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
 2) Moonshine recipe for Amazon backups
