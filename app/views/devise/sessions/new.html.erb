@@ -1,4 +1,3 @@
-<div class="login">
 	<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 	  <p><%= f.label :email %><br />
 	  <%= f.text_field :email %></p>
@@ -23,4 +22,3 @@
 		<%= link_to "I didn't receive unlock instructions", new_unlock_path(resource_name) %><br />
 		<% end -%>
 	  </div>
-</div>
