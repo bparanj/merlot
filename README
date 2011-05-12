@@ -1,7 +1,11 @@
 Drop shadow effect is missing for the content area
 Edit screen for admin layout has a different font for the tabs. 
+When admin signs in the flash message is not displayed below the tabs
 
 
+Tasks to be delegated:
+
+1) Signup, Signin and Contact has the right navigation pushed down the page.
 
 1) How to change the root password for mysql (Change database.yml ?)
 You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
@@ -26,26 +30,17 @@ You can chmod this file 600 so only root can read it.
 
 
 
-1) Right section - Google Ads
-2) Horizontal Navigation : 
-	Home (Recent Articles), 
-	Categories ( Book Reviews), 
-	Submit Articles, 
-	Login, 
-	Contact
-3) Left section - Categories
-4) Google analytics
+
+1) Setup Google analytics
 
 Internal
 
-1) Create user from admin dashboard. Publish articles
-2) All new users account should go through moderator queue (< 2 weeks)
+1) admin dashboard. Publish articles
+2) All articles published by new users account should go through moderator queue (< 2 weeks)
 
 Become an Author - Benefits:
 
-1) Link to your site. Your profile. Enhanced credibility. Highly-Targeted Traffic.
-2) Reach a wider audience and build your personal brands
-3) Experts in your field. 
+
 Email: Writing guidelines, themes, topics, keywords, categories. Training video on how to use the
 publishing platform.
 
@@ -89,5 +84,235 @@ Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJ
 
 
 Latest Commit Message:
+
+
+
+
+
+
+
+
+
+
+<% if admin_signed_in? %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title><%= h(yield(:title) || "Merlot") %></title>
+	<%= csrf_meta_tag %>
+	<%= stylesheet_link_tag 'admin' %>
+	<%= javascript_include_tag :defaults %>
+	<%= yield(:head) %>
+</head>
+<body>
+
+	<%- flash.each do |name, msg| -%>
+	<%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+	<%- end -%>
+
+
+	<div id="Header">
+		<div class="navigation">&nbsp;</div>
+		<!-- TABS -->
+		<div id="Tabs">
+			<ul id="MainTabs">
+				<li>
+					<%= link_to 'Dashboard', admins_path %>
+				</li>
+				<li>
+					<%= link_to 'Articles', new_article_path %>
+				</li>
+				<li>
+					<%= link_to 'Users', "www.google.com" %>
+				</li>
+				<li>
+					<%= link_to 'Profile', "www.google.com" %>
+				</li>
+				<li>
+					<%= link_to 'Logout', destroy_admin_session_path %>	
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="Wrapper">
+		<div class="container">
+			<div class="clearfix"></div>
+			<div class="fleft content-container">
+				<div class="page_header">    
+					<div class="link_back" style="float:left;">
+						<a href="#">« All Messages</a>
+					</div>
+					<div class="page_header_links">
+						<a href="#" class="admin">New message</a> | 
+						<a href="#" class="admin">Edit this message</a> 
+					</div>
+				</div>
+
+				<div class="content-wrapper">
+					<div class="content">
+
+						<%- if show_title? -%>
+						<h1><%=h yield(:title) %></h1>
+						<%- end -%>
+
+						<%= yield %>
+
+
+					</div>	
+				</div>	
+			</div>
+			<div class="fleft right-container">
+				<div class="right-content-container">
+					<div class="right-content">
+					</div>	
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+<% else %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title><%= h(yield(:title) || "Merlot") %></title>
+    <%= csrf_meta_tag %>
+    <%= stylesheet_link_tag 'application' %>
+ <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" %>
+ <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application", "rails" %>
+
+    <%= yield(:head) %>
+  </head>
+  <body>
+
+<div id="Header">
+	<div class="navigation">&nbsp;</div>
+	<!-- TABS -->
+	<div id="Tabs">
+		<ul id="MainTabs">
+			<li>
+				<%= link_to 'Home', root_path %>
+			</li>
+			<li>
+				<%= link_to 'Articles', articles_path %>
+			</li>
+			<% if user_signed_in? -%>
+				<li>
+					<%= link_to 'My Profile', edit_user_registration_path %>
+				</li>
+				<li>
+					<%= link_to 'Sign out', destroy_user_session_path %>
+				</li>
+		    <% else %>
+				<li>
+				  <%= link_to 'Sign up', new_user_registration_path %> 			
+				</li>
+				<li>
+			  	  <%= link_to 'Sign in', new_user_session_path %>	
+				</li>
+	        <% end -%>
+			<li>
+				<%= link_to 'Contact', new_feedback_url %>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<%- flash.each do |name, msg| -%>
+  <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+<%- end -%>
+
+
+<div id="Wrapper" style="position: relative;">
+	<div class="container">
+		<div class="clearfix"></div>
+		<div class="fleft left-container">
+			<div class="left-content-container">
+				<h2>Categories</h2>
+				<div class="left-content">
+					<ul>
+						<li><a href="#">Test Category 1</a></li>
+						<li><a href="#">Test Category 2</a></li>
+						<li><a href="#">Test Category 3</a></li>
+						<li><a href="#">Test Category 4</a></li>
+						<li><a href="#">Test Category 5</a></li>
+						<li><a href="#">Test Category 6</a></li>
+						<li><a href="#">Test Category 7</a></li>
+						<li><a href="#">Test Category 8</a></li>
+						<li><a href="#">Test Category 9</a></li>
+					</ul>
+				</div>	
+				<br/>
+				<h2>Become a Member</h2>
+				<div class="left-content">
+					<ul>
+						<li>
+						<a href="#">Sign up</a> for free membership and get notifications for members only free Ruby and Rails screencasts. <a href="#">Privacy</a> 
+						</li>
+					</ul>
+				</div>
+				<br/>
+				<h2>Rails MeetUp</h2>
+				<div class="left-content">
+					If you live in the bay area, check out Silicon Valley Ruby Meetup 
+				</div>
+				
+			</div>		
+		</div>
+		<div class="fleft center-container">
+			<div class="center-content-container">
+				<div class="center-content">
+
+					  <%- if show_title? -%>
+					    <h1><%=h yield(:title) %></h1>
+					  <%- end -%>
+
+					  <%= yield %>
+
+				</div>	
+			</div>	
+		</div>
+		<div class="fleft right-container">
+			<div class="right-content-container">
+				<div class="right-content">
+					<h2>Recommend Me</h2>
+					<div>
+						some dummy text etc goes here
+					</div>
+					<br/>
+					<h2>Google Ads</h2>
+					<div>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+						google ads goes here<br/>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+  </body>
+</html>
+<% end %>
+
+
+
+
+
 
 
