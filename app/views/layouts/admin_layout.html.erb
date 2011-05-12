@@ -16,19 +16,19 @@
 		<div id="Tabs">
 			<ul id="MainTabs">
 				<li>
-					<%= link_to 'Dashboard', admins_path %>
+					<%= link_to 'Dashboard', admins_path, :class => is_active?("admins") %>
 				</li>
 				<li>
-					<%= link_to 'Articles', new_article_path %>
+					<%= link_to 'Articles', new_article_path, :class => is_active?("articles") %>
 				</li>
 				<li>
-					<%= link_to 'Users', "www.google.com" %>
+					<%= link_to 'Users', "www.google.com", :class => is_active?("home") %>
 				</li>
 				<li>
-					<%= link_to 'Profile', "www.google.com" %>
+					<%= link_to 'Profile', "www.google.com", :class => is_active?("home") %>
 				</li>
 				<li>
-					<%= link_to 'Logout', destroy_admin_session_path %>	
+					<%= link_to 'Logout', destroy_admin_session_path, :class => is_active?("devise/sessions") %>	
 				</li>
 			</ul>
 		</div>

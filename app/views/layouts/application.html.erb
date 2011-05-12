@@ -18,10 +18,10 @@
 	<div id="Tabs">
 		<ul id="MainTabs">
 			<li>
-				<%= link_to 'Home', root_path %>
+				<%= link_to 'Home', root_path, :class => is_active?("home") %>
 			</li>
 			<li>
-				<%= link_to 'Articles', articles_path %>
+				<%= link_to 'Articles', articles_path, :class => is_active?("articles") %>
 			</li>
 			<% if user_signed_in? -%>
 				<li>
@@ -32,14 +32,15 @@
 				</li>
 		    <% else %>
 				<li>
-				  <%= link_to 'Sign up', new_user_registration_path %> 			
+				  <%= link_to 'Sign up', new_user_registration_path, :class => is_active?("registrations") %> 			
 				</li>
+				
 				<li>
-			  	  <%= link_to 'Sign in', new_user_session_path %>	
+			  	  <%= link_to 'Sign in', new_user_session_path, :class => is_active?("devise/sessions") %>	
 				</li>
 	        <% end -%>
 			<li>
-				<%= link_to 'Contact', new_feedback_url %>
+				<%= link_to 'Contact', new_feedback_url, :class => is_active?("feedbacks") %>
 			</li>
 		</ul>
 	</div>

@@ -1,6 +1,9 @@
+Articles edit and new must be protected from anonymous users
+
+
 Drop shadow effect is missing for the content area
 Edit screen for admin layout has a different font for the tabs. 
-When admin signs in the flash message is not displayed below the tabs
+
 
 ---------------------------
 Tasks to be delegated:
