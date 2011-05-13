@@ -1,5 +1,5 @@
-Articles edit and new must be protected from anonymous users
-
+1) Articles edit and new must be protected from anonymous users
+2) Refer Rubyplus.org to style the css for articles index and show page
 
 Drop shadow effect is missing for the content area
 Edit screen for admin layout has a different font for the tabs. 
