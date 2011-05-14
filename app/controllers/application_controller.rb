@@ -11,7 +11,6 @@ class ApplicationController < ActionController::Base
   
   def layout_by_resource
     if admin_signed_in?
-      logger.info("Layout resource used is admin_layout")
       "admin_layout"
     else
       "application"

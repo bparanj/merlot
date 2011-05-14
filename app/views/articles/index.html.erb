@@ -1,25 +1,27 @@
+<% unless admin_signed_in? %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Content</th>
-    <th>Published on</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+	<p>	<%= link_to 'Submit Article', new_article_path %> </p>
 
-<% @articles.each do |article| %>
-  <tr>
-    <td><%= article.title %></td>
-    <td><%= raw (article.content) %></td>
-    <td><%= article.published_on %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-  </tr>
 <% end %>
-</table>
 
-<br />
+<% for article in @articles %>
 
-<%= link_to 'New Article', new_article_path %>
+<div class="article">
+	<div class="main">
+		<h2><%= link_to article.title, article %></h2>
+		<div class="description">
+			<%= raw article.content %>
+		</div>		
+	</div>
+	<br/>
+	<div class="side">
+		<div class="published_at"> <%= article.published_on.to_s %> </div>
+	</div>
+
+</div>
+
+	<% if admin_signed_in? %>
+	    <p> <%= link_to 'Edit', edit_article_path(article) %> </p>
+	<% end %>
+
+<% end %>

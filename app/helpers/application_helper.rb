@@ -6,4 +6,8 @@ module ApplicationHelper
     "current" if params[:controller] == page_name
   end
   
+  def left_arrow(text)
+    raw("&larr #{text}")
+  end
+  
 end

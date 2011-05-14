@@ -120,5 +120,5 @@ Changelog
 ---
 - Initial release.
 
-.. _WYMeditor:              http://www.wymeditor.org/
+.. _WYMeditor:              http://www.zepho.com/
 .. _WYMeditor plugin page:  http://trac.wymeditor.org/trac/wiki/0.4/Plugins

@@ -1,3 +1,23 @@
+.article .side {
+  color: #999;
+  float: left;
+  width: 85px;
+  text-align: right;
+}
+
+.article {
+  margin: 30px 0;
+}
+
+.article .description {
+  margin-bottom: 2px;
+}
+
+.article .published_at {
+  font-size: 12px;
+}
+
+
 #flash_notice, #flash_alert {
   padding: 5px 8px;
   margin: 10px 0;

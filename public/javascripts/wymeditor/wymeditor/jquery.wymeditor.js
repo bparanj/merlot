@@ -2,12 +2,12 @@
  * @version 0.5-rc1
  *
  * WYMeditor : what you see is What You Mean web-based editor
- * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.wymeditor.org/
+ * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.zepho.com/
  * Dual licensed under the MIT (MIT-license.txt)
  * and GPL (GPL-license.txt) licenses.
  *
  * For further information visit:
- *        http://www.wymeditor.org/
+ *        http://www.zepho.com/
  *
  * File: jquery.wymeditor.js
  *
@@ -366,7 +366,7 @@ jQuery.fn.wymeditor = function(options) {
               + "</div>",
 
     logoHtml:  "<a class='wym_wymeditor_link' "
-              + "href='http://www.wymeditor.org/'>WYMeditor</a>",
+              + "href='http://www.zepho.com/'>WYMeditor</a>",
 
     iframeHtml:"<div class='wym_iframe wym_section'>"
               + "<iframe "
@@ -3834,12 +3834,12 @@ WYMeditor.Helper = {
 
 /*
  * WYMeditor : what you see is What You Mean web-based editor
- * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.wymeditor.org/
+ * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.zepho.com/
  * Dual licensed under the MIT (MIT-license.txt)
  * and GPL (GPL-license.txt) licenses.
  *
  * For further information visit:
- *        http://www.wymeditor.org/
+ *        http://www.zepho.com/
  *
  * File Name:
  *        jquery.wymeditor.explorer.js
@@ -4038,12 +4038,12 @@ WYMeditor.WymClassExplorer.prototype.setFocusToNode = function(node, toStart) {
 
 /*
  * WYMeditor : what you see is What You Mean web-based editor
- * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.wymeditor.org/
+ * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.zepho.com/
  * Dual licensed under the MIT (MIT-license.txt)
  * and GPL (GPL-license.txt) licenses.
  *
  * For further information visit:
- *        http://www.wymeditor.org/
+ *        http://www.zepho.com/
  *
  * File Name:
  *        jquery.wymeditor.mozilla.js
@@ -4318,12 +4318,12 @@ WYMeditor.WymClassMozilla.prototype.getTagForStyle = function(style) {
 
 /*
  * WYMeditor : what you see is What You Mean web-based editor
- * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.wymeditor.org/
+ * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.zepho.com/
  * Dual licensed under the MIT (MIT-license.txt)
  * and GPL (GPL-license.txt) licenses.
  *
  * For further information visit:
- *        http://www.wymeditor.org/
+ *        http://www.zepho.com/
  *
  * File Name:
  *        jquery.wymeditor.opera.js
@@ -4437,12 +4437,12 @@ WYMeditor.WymClassOpera.prototype.keyup = function(evt) {
 };
 /*
  * WYMeditor : what you see is What You Mean web-based editor
- * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.wymeditor.org/
+ * Copyright (c) 2005 - 2009 Jean-Francois Hovinne, http://www.zepho.com/
  * Dual licensed under the MIT (MIT-license.txt)
  * and GPL (GPL-license.txt) licenses.
  *
  * For further information visit:
- *        http://www.wymeditor.org/
+ *        http://www.zepho.com/
  *
  * File Name:
  *        jquery.wymeditor.safari.js

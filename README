@@ -4,10 +4,19 @@
 Drop shadow effect is missing for the content area
 Edit screen for admin layout has a different font for the tabs. 
 
+Admin - Approve, Edit 
+New users with roles must go through approval process to get articles published
+Must be approved to publish if account is < two weeks old
+
+Moderator - Approve articles, edit
+Contributor - Submit articles (no edit or approve). 
+Editor - Can edit
+Author - create, edit
 
 ---------------------------
 Tasks to be delegated:
 
+1) Get help to make JQuery datepicker inline option work. Make the date default to today's date.
 
 ---------------------------
 1) How to change the root password for mysql (Change database.yml ?)

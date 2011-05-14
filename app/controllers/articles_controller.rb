@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   # TODO: #1 - Make edit save a new version with a string column in the article to indicate who edited it.
+  before_filter :verify_is_admin, :only => [:edit, :update, :destroy] 
   
   def index
     @articles = Article.all
@@ -19,7 +20,8 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(params[:article])
-
+    set_created_by(@article)
+    
     if @article.save
       redirect_to(new_article_path, :notice => 'Article was successfully created.')
     else
@@ -29,7 +31,7 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
-
+    
     if @article.update_attributes(params[:article])
       redirect_to(@article, :notice => 'Article was successfully updated.')
     else
@@ -39,7 +41,20 @@ class ArticlesController < ApplicationController
 
   def destroy
     @article = Article.find(params[:id])
-    @article.destroy
+    # TODO: Mark article as archived
+    # @article.destroy
     redirect_to(articles_url)
+  end
+  
+  def verify_is_admin
+    redirect_to root_url unless admin_signed_in?
+  end
+  
+  def set_created_by(article)
+    if current_user
+      article.created_by = current_user.email
+    else
+      article.created_by = "Guest"
+    end
   end
 end
