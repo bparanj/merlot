@@ -34,7 +34,6 @@ h3{margin:0px 0 0 0;color:#666;font-size:14px;padding:0}
 .right-content-container{border:solid 1px #7590ae;min-height:650px;}
 
 .left-content-container h2,.right-content-container h2{padding:2px;background-color:#cccccc;text-align:center;}
-
 .left-content,.center-content,.right-content{padding:10px;}
 
 #Header div.navigation a.current{font-weight:bold;text-decoration:none}
@@ -47,7 +46,7 @@ h3{margin:0px 0 0 0;color:#666;font-size:14px;padding:0}
 
 div#Tabs a:link,div#Tabs a:visited{text-decoration:none}#Tabs a:hover{color:#fff;background:#333}
 #Tabs ul#MainTabs a:link,#Tabs ul#MainTabs a:visited{float:left;font-size:12px;line-height:12px;font-weight:normal;padding:5px 9px 7px;margin:0 1px}
-#Tabs ul#MainTabs a:link.current,#Tabs ul#MainTabs a:visited.current{color:#222;font-weight:bold;text-decoration:none;margin:0 1px;padding-bottom:9px;background:#e5e5e5;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd',endColorstr='#e5e5e5');background:-webkit-gradient(linear,left top,left bottom,from(#fdfdfd),to(#e5e5e5));background:-moz-linear-gradient(top,#fdfdfd,#e5e5e5)}
+#Tabs ul#MainTabs a:link.current,#Tabs ul#MainTabs a:visited.current{color:#222;font-weight:bold;text-decoration:none;margin:0 1px;padding-bottom:9px;background:#e5e5e5 url(../images/current-nav-bg.jpg) repeat-x;}
 
 #Header h1 a:link, #Header h1 a:visited {color: #fc0;text-decoration: none;}
 #Header h1 a:hover {color: #fc0;background-color: #036;text-decoration: underline;}
