@@ -15,6 +15,6 @@ class Ability
       #   #   article.try(:user) == user # WTF ?
       #   # end
       # end
-    end     
+    # end     
   end
 end
