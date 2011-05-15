@@ -9,7 +9,7 @@
 <p>
 	<div class="article">
 		<div class="side">
-			<div class="published_at"> <%= @article.published_on %> </div>
+			<div class="published_at"> By <%= @article.created_by + " on " + @article.published_on %> </div>
 		</div>
 	</div>	
 </p>
