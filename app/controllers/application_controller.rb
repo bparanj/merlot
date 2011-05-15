@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  helper :layout
+  # helper :layout
   layout :layout_by_resource
-
+  before_filter :load_layout_customization
   
   protected
   
@@ -14,4 +14,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def load_layout_customization
+    @left_navigation = false
+    @right_navigation = false
+  end
 end

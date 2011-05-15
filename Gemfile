@@ -6,7 +6,7 @@ gem 'devise'
 gem 'pony'
 gem 'mysql2', '< 0.3'
 gem "jquery-rails"
-gem "wymeditor"
+gem "tiny_mce"
 
 # Deploy with Capistrano
 # gem 'capistrano'

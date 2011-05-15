@@ -1,0 +1,12 @@
+# Here you can specify default options for TinyMCE across all controllers
+#
+theme: advanced
+theme_advanced_toolbar_location: top
+theme_advanced_toolbar_align: left
+gecko_spellcheck: true
+height: 400
+width: 430
+plugins:
+ - table
+ - paste
+ - spellchecker

@@ -1,7 +1,8 @@
 class ArticlesController < ApplicationController
   # TODO: #1 - Make edit save a new version with a string column in the article to indicate who edited it.
   before_filter :verify_is_admin, :only => [:edit, :update, :destroy] 
-  
+  uses_tiny_mce
+
   def index
     @articles = Article.all
   end

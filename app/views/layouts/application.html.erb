@@ -11,6 +11,7 @@
  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application", "rails" %>
 
     <%= yield(:head) %>
+  <%= include_tiny_mce_if_needed %>
   </head>
   <body>
 
@@ -57,7 +58,9 @@
 	<div class="container">
 		<div class="clearfix"></div>
 		<div class="fleft left-container">
-<!-- 		
+			
+			<% if @left_navigation %>
+		
 			<div class="left-content-container">
 				<h2>Categories</h2>
 				<div class="left-content">
@@ -89,7 +92,8 @@
 				</div>
 				
 			</div>		
- -->
+ 
+	<% end %>
 		</div>
 		<div class="fleft center-container">
 			<div class="center-content-container">
@@ -101,7 +105,7 @@
 			</div>	
 		</div>
 		
-		<!-- 
+	<% if @right_navigation %>
 		<div class="fleft right-container">
 			<div class="right-content-container">
 				<div class="right-content">
@@ -125,7 +129,8 @@
 		<div class="clearfix"></div>
 	</div>
 	
-	 -->
+   <% end %>
+
 </div>
 
   </body>
