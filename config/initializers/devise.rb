@@ -3,7 +3,7 @@
 Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in DeviseMailer.
-  config.mailer_sender = "feedback@zepho.com"
+  config.mailer_sender = "<CreditCardsLogic> mailer@zepho.com"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
