@@ -8,10 +8,6 @@ Admin - Approve, Edit
 New users with roles must go through approval process to get articles published
 Must be approved to publish if account is < two weeks old
 
-Moderator - Approve articles, edit
-Contributor - Submit articles (no edit or approve). 
-Editor - Can edit
-Author - create, edit
 
 ---------------------------
 Tasks to be delegated:

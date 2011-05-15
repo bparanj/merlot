@@ -5,7 +5,6 @@ gem 'sqlite3'
 gem 'devise'
 gem 'pony'
 gem 'mysql2', '< 0.3'
-gem "cancan"
 gem "jquery-rails"
 gem "wymeditor"
 

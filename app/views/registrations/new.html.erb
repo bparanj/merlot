@@ -11,14 +11,6 @@
   <p><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></p>
 
-  <p>
-  	<%= f.label :roles %><br/>
-	<% for role in User::ROLES %>
-	  <%= check_box_tag "user[roles][]", role, @user.roles.include?(role) %>
-	  <%= h role.humanize %><br/>
-	<% end %>
-	<%= hidden_field_tag "user[roles][]" %>
-  </p>
   <p><%= f.submit "Sign up" %></p>
 <% end %>
 
