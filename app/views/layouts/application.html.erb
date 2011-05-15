@@ -2,7 +2,9 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title><%= h(yield(:title) || "Merlot") %></title>
+  
+    <title><%= yield(:title) %></title>
+
     <%= csrf_meta_tag %>
     <%= stylesheet_link_tag 'application', 'common' %>
  <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" %>
@@ -25,7 +27,7 @@
 			</li>
 			<% if user_signed_in? -%>
 				<li>
-					<%= link_to 'My Profile', edit_user_registration_path %>
+					<%= link_to 'My Profile', edit_user_registration_path, :class => is_active?("users/edit")  %>
 				</li>
 				<li>
 					<%= link_to 'Sign out', destroy_user_session_path %>
@@ -92,11 +94,7 @@
 		<div class="fleft center-container">
 			<div class="center-content-container">
 				<div class="center-content">
-
-					  <%- if show_title? -%>
-					    <h1><%=h yield(:title) %></h1>
-					  <%- end -%>
-
+					
 					  <%= yield %>
 
 				</div>	

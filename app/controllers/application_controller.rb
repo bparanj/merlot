@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  helper :layout
   layout :layout_by_resource
 
   rescue_from CanCan::AccessDenied do |deny|

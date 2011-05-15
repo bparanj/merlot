@@ -27,10 +27,10 @@
 					<%= link_to 'Articles', articles_path, :class => is_active?("articles") %>
 				</li>
 				<li>
-					<%= link_to 'Users', "www.google.com", :class => is_active?("home") %>
+					<%= link_to 'Users', "www.google.com", :class => is_active?("users") %>
 				</li>
 				<li>
-					<%= link_to 'Profile', "www.google.com", :class => is_active?("home") %>
+					<%= link_to 'Profile', edit_admin_registration_path, :class => is_active?("admin/edit") %>
 				</li>
 				<li>
 					<%= link_to 'Logout', destroy_admin_session_path, :class => is_active?("devise/sessions") %>	
