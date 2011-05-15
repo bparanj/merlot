@@ -3,10 +3,6 @@ class ApplicationController < ActionController::Base
   helper :layout
   layout :layout_by_resource
 
-  rescue_from CanCan::AccessDenied do |deny|
-    flash[:error] = "Page not found!"
-    redirect_to root_url
-  end
   
   protected
   
