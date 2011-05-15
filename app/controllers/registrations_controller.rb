@@ -14,7 +14,7 @@ class RegistrationsController < Devise::RegistrationsController
   protected
 
   def after_sign_in_path_for(resource)
-    if resource.role? :admin
+    if admin_signed_in?
       admins_path
     else
       root_path
