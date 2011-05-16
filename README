@@ -46,7 +46,7 @@ You can chmod this file 600 so only root can read it.
 Internal
 
 1) admin dashboard. Publish articles
-2) All articles published by new users account should go through moderator queue (< 2 weeks)
+2) 
 Articles must be approved to publish if account is < two weeks old
 
 

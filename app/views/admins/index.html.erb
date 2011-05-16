@@ -1,9 +1,13 @@
 <% title 'Admin' -%>
 
-<h2>Dashboard</h2>
 
 <ul>
-	<li>Moderator Queue</li>
-	<li>Contributor Application Approvals</li>
-	<li>Stats - How many articles were published? How many signups? How many articles are pending moderations?</li>
+	<li>Number of articles: <%= Article.count %> 	</li>
+	<li>Number of users <%= User.count %> </li>
+	<li>There are <%= Article.two_weeks_count %> articles in the past two weeks.</li>
+</ul>
+<br/>
+<ul>
+	<li>All articles published by new users account will go live after (2 weeks). So within the 2 weeks period, review the article and delete if necessary.</li>
+	<li>User may have to be suspended. Version 2.0</li>
 </ul>

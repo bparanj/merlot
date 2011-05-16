@@ -1,4 +1,6 @@
 Merlot::Application.routes.draw do
+  
+  get "accounts/index"
 
   resources :articles
 
@@ -9,7 +11,7 @@ Merlot::Application.routes.draw do
   resources :admins, :only => :index
   resources :feedbacks, :only => [:new, :create]
   resources :submissions, :only => [:new, :create] 
-  
+
   root :to => 'home#index'
 
   match '/token' => 'home#token', :as => :token
