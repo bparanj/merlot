@@ -1,8 +1,10 @@
 
-Carl Tanner rocketeer.captproton@gmail.com
+1) Make title SEO friendly
+2) Sitemap
+3) RSS feeds
+4) Social media buttons (A/B Test before to decide the best design)
 
 
-1) Pagination using Kaminari
 
 Drop shadow effect is missing for the content area
 Edit screen for admin layout has a different font for the tabs. 

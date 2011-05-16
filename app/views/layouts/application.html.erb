@@ -26,6 +26,10 @@
 			<li>
 				<%= link_to 'Articles', articles_path, :class => is_active?("articles") %>
 			</li>
+			<li>
+				<%= link_to 'Submit Article', new_submission_path, :class => is_active?("submissions") %>
+			</li>
+
 			<% if user_signed_in? -%>
 				<li>
 					<%= link_to 'My Profile', edit_user_registration_path, :class => is_active?("users/edit")  %>

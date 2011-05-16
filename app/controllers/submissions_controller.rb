@@ -1,0 +1,3 @@
+class SubmissionsController < ArticlesController
+
+end

@@ -1,8 +1,3 @@
-<% unless admin_signed_in? %>
-
-	<p>	<%= link_to 'Submit Article', new_article_path %> </p>
-
-<% end %>
 
 <% for article in @articles %>
 
