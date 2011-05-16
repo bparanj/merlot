@@ -12,6 +12,7 @@ Edit screen for admin layout has a different font for the tabs.
 Tasks to be delegated:
 
 1) Get help to make JQuery datepicker inline option work. Make the date default to today's date.
+2) Get help to create Digstyle theme for Kaminari Themes
 
 ---------------------------
 1) How to change the root password for mysql (Change database.yml ?)

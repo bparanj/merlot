@@ -3,9 +3,9 @@ class ArticlesController < ApplicationController
   before_filter :verify_is_admin, :only => [:edit, :update, :destroy] 
   uses_tiny_mce
 
-#   Book.order('published_at').page(3).per(10)
+#   Book.order('published_at').page(3).per(10) - Defaults to 25 per page
   def index
-    @articles = Article.all
+    @articles = Article.order("published_on desc").page(params[:page]).per(5)
   end
 
   def show

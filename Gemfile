@@ -7,6 +7,7 @@ gem 'pony'
 gem 'mysql2', '< 0.3'
 gem "jquery-rails"
 gem "tiny_mce"
+gem 'kaminari'
 
 # Deploy with Capistrano
 # gem 'capistrano'
