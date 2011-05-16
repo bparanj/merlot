@@ -8,6 +8,7 @@ gem 'mysql2', '< 0.3'
 gem "jquery-rails"
 gem "tiny_mce"
 gem 'kaminari'
+gem 'friendly_id'
 
 # Deploy with Capistrano
 # gem 'capistrano'
