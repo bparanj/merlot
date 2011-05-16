@@ -3,6 +3,7 @@ class ArticlesController < ApplicationController
   before_filter :verify_is_admin, :only => [:edit, :update, :destroy] 
   uses_tiny_mce
 
+#   Book.order('published_at').page(3).per(10)
   def index
     @articles = Article.all
   end

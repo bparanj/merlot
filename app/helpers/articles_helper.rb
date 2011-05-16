@@ -4,4 +4,5 @@ module ArticlesHelper
     result += "By " + article.created_by + " on " if article.created_by     
     result += article.published_on if article.published_on
   end
+  
 end

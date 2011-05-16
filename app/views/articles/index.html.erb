@@ -10,7 +10,10 @@
 	<div class="main">
 		<h2><%= link_to article.title, article %></h2>
 		<div class="description">
-			<%= raw article.content %>
+			<%= raw(truncate(article.content, :length => 200, :omission => ' ...')) %>
+			<% if article.content.size > 200 %>
+				<%= link_to "(read more)", article %>
+			<% end %>
 		</div>		
 	</div>
 	<br/>

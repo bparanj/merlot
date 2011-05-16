@@ -1,11 +1,11 @@
-11.30 pst on monday morning
 
-June 20, 21, 22, 23 JAX Conf 2011 San Jose
+Carl Tanner rocketeer.captproton@gmail.com
+
+
+1) Pagination using Kaminari
 
 Drop shadow effect is missing for the content area
 Edit screen for admin layout has a different font for the tabs. 
-
-Articles must be approved to publish if account is < two weeks old
 
 
 ---------------------------
@@ -44,8 +44,8 @@ Internal
 
 1) admin dashboard. Publish articles
 2) All articles published by new users account should go through moderator queue (< 2 weeks)
+Articles must be approved to publish if account is < two weeks old
 
-Become an Author - Benefits:
 
 
 Email: Writing guidelines, themes, topics, keywords, categories. Training video on how to use the
@@ -93,12 +93,14 @@ Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJ
 Latest Commit Message:
 
 
+
+Tests to Optimize Revenue:
+
 1) How to make the right side Google ads stay put when page is scrolled
 http://www.gaugeus.com/ramblings/2007/10/27/building-a-restful-ruby-on-rails-application-from-the-ground-up-with-a-site-wide-layout
 
+2) https://github.com/tpunder/gwo
 
-
-
-
+3) http://www.investopedia.com/articles/pf/09/seven-ways-borrow-money.asp
 
 
