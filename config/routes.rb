@@ -1,8 +1,8 @@
 Merlot::Application.routes.draw do
   
-  get "errors/4oh4"
+  get "errors/fourzerofour"
 
-  get "errors/5oh0"
+  get "errors/fivehundred"
 
   get "accounts/index"
 
@@ -20,5 +20,5 @@ Merlot::Application.routes.draw do
 
   match '/token' => 'home#token', :as => :token
   
-  match '*a', :to => 'errors#4oh4'
+  match '*a', :to => 'errors#fourzerofour'
 end
