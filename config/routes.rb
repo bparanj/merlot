@@ -1,5 +1,9 @@
 Merlot::Application.routes.draw do
   
+  get "errors/404"
+
+  get "errors/500"
+
   get "accounts/index"
 
   resources :articles
@@ -15,4 +19,6 @@ Merlot::Application.routes.draw do
   root :to => 'home#index'
 
   match '/token' => 'home#token', :as => :token
+  
+  match '*a', :to => 'errors#404'
 end
