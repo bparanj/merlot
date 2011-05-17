@@ -29,7 +29,7 @@ h3{margin:0px 0 0 0;color:#666;font-size:14px;padding:0}
 .content,.right-content{padding:10px;}
 
 #Header div.navigation a.current{font-weight:bold;text-decoration:none}
-#Header div.navigation a.free_pitch{font-size:10px;text-decoration:none!important}
+#Header div.navigation a.free_pitch{font-size:10px;text-decoration:none;}
 #Header div.navigation a.free_pitch span{font-size:12px;text-decoration:underline}
 #Header div.navigation a.free_pitch:hover span{text-decoration:none}
 #Header.global div.navigation{font-size:10px;padding:7px 25px 0}
@@ -59,6 +59,6 @@ color: #fff;
 #Tabs a:hover {color: #fff;background-color: #1D64AD;}
 
 .page_header{height:20px;background-color:#EDF3FE;padding:10px;-moz-box-shadow:3px 3px 4px #bbb;}
-.page_header a{font-size:12px;text-decoration:none;}
+.page_header a{text-decoration:none;}
 .page_header_links{float:right;}
 .page_header_links a{color:#ff0000;}

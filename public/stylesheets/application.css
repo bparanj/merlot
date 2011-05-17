@@ -36,8 +36,8 @@ h3{margin:0px 0 0 0;color:#666;font-size:14px;padding:0}
 .left-content-container h2,.right-content-container h2{padding:2px;background-color:#cccccc;text-align:center;}
 .left-content,.center-content,.right-content{padding:10px;}
 
-#Header div.navigation a.current{font-weight:bold;text-decoration:none}
-#Header div.navigation a.free_pitch{font-size:10px;text-decoration:none!important}
+#Header div.navigation a.current{font-weight:bold;text-decoration:none;}
+#Header div.navigation a.free_pitch{font-size:10px;text-decoration:none;}
 #Header div.navigation a.free_pitch span{font-size:12px;text-decoration:underline}
 #Header div.navigation a.free_pitch:hover span{text-decoration:none}
 #Header.global div.navigation{font-size:10px;padding:7px 25px 0}
