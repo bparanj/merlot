@@ -1,9 +1,9 @@
 class ErrorsController < ApplicationController
-  def 404
+  def 4oh4
     # Email exception using rails plugin
   end
 
-  def 500
+  def 5oh0
     # Email exception using rails plugin
   end
 
