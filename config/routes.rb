@@ -1,9 +1,7 @@
 Merlot::Application.routes.draw do
   
   get "errors/fourzerofour"
-
   get "errors/fivehundred"
-
   get "accounts/index"
 
   resources :articles

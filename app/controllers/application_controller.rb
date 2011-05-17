@@ -32,7 +32,7 @@ class ApplicationController < ActionController::Base
 
   def render_not_found(exception)
     ExceptionNotifier::Notifier.exception_notification(request.env, exception).deliver
-    render :template => "/errors/404.html.erb", :status => 404
+    render :template => "/errors/fourzerofour.html.erb", :status => 404
   end
 
   def render_error(exception)
@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
     # or get more error info and use different templates
     ExceptionNotifier::Notifier.exception_notification(request.env, exception).deliver
     
-    render :template => "/errors/500.html.erb", :status => 500
+    render :template => "/errors/fivehundred.html.erb", :status => 500
   end
   
 end
