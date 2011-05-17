@@ -18,6 +18,8 @@ Tasks to be delegated:
 
 1) Get help to make JQuery datepicker inline option work. Make the date default to today's date.
 2) Get help to create Digstyle theme for Kaminari Themes
+3) At least one recipient (To, Cc or Bcc) is required to send a message error. Test if sendmail
+config will fix the problem
 
 ---------------------------
 1) How to change the root password for mysql (Change database.yml ?)
@@ -49,8 +51,7 @@ You can chmod this file 600 so only root can read it.
 Internal
 
 1) admin dashboard. Publish articles
-2) 
-Articles must be approved to publish if account is < two weeks old
+2) Articles go live if account is > two weeks old
 
 
 
