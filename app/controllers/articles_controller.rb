@@ -1,11 +1,10 @@
 class ArticlesController < ApplicationController
-  # TODO: #1 - Make edit save a new version with a string column in the article to indicate who edited it.
+
   before_filter :verify_is_admin, :only => [:edit, :update, :destroy] 
   uses_tiny_mce
 
-#   Book.order('published_at').page(3).per(10) - Defaults to 25 per page
   def index
-    @articles = Article.order("published_on desc").page(params[:page]).per(5)
+    @articles = Article.older_than_two_weeks(params[:page])
   end
 
   def show
