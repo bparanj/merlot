@@ -4,7 +4,8 @@ class ArticlesController < ApplicationController
   uses_tiny_mce
 
   def index
-    @articles = Article.older_than_two_weeks(params[:page])
+    # @articles = Article.older_than_two_weeks(params[:page])
+    @articles = Article.order("published_on desc").page(params[:page]).per(5)
   end
 
   def show
