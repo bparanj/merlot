@@ -1,13 +1,20 @@
 1) Copy writing guidelines (Link at the bottom and why write for us?)
-2) Publish articles - delete the latest two weeks article and delete if required (admin role only)
-3) Articles go live automatically if article created_at is > two weeks old and the admin has not deleted.
-4) Sitemap
+2) Sitemap
 
 
 
 
 
 ---------------------------
+
+Instructions 
+
+1) Publish articles - review the latest two weeks article and delete if required (admin role only)
+2) Articles go live automatically if article created_at is > two weeks old and the admin has not deleted.
+
+
+---------------------------
+
 Tasks to be delegated:
 
 1) Get help to make JQuery datepicker inline option work. Make the date default to today's date.
