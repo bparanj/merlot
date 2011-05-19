@@ -1,7 +1,9 @@
-1) Copy writing guidelines (Link at the bottom and why write for us?)
-2) Sitemap
+1) Sitemap
 
-
+1) How to change the root password for mysql (Change database.yml ?)
+You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
+2) Set database.yml to ignore for github and check the secure way to use Capistrano to use
+database.yml on the server
 
 
 
@@ -25,8 +27,7 @@ config will fix the problem
 5) Edit screen for admin layout has a different font for the tabs. 
 
 ---------------------------
-1) How to change the root password for mysql (Change database.yml ?)
-You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
+
 2) Moonshine recipe for Amazon backups
 3) Test Moonshine recipe for Virtual hosts 
 4) Tango calendar and Pollen Allergy Alert apps deployed as virtual hosts on the same Linode instance
@@ -62,6 +63,7 @@ Version 2
 5) RSS feeds
 6) Social media buttons (A/B Test before to decide the best design)
 7) Setup Google analytics
+8) Copy writing guidelines (Link at the bottom and why write for us?)
 
 Editorial guidelines: http://ezinearticles.com/editorial-guidelines.html
 
