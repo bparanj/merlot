@@ -29,7 +29,7 @@
 			<li>
 				<%= link_to 'Submit Article', new_submission_path, :class => is_active?("submissions") %>
 			</li>
-
+<!-- 
 			<% if user_signed_in? -%>
 				<li>
 					<%= link_to 'My Profile', edit_user_registration_path, :class => is_active?("users/edit")  %>
@@ -46,12 +46,16 @@
 			  	  <%= link_to 'Sign in', new_user_session_path, :class => is_active?("devise/sessions") %>	
 				</li>
 	        <% end -%>
+	 -->
+	
 			<li>
 				<%= link_to 'Contact', new_feedback_url, :class => is_active?("feedbacks") %>
 			</li>
 		</ul>
 	</div>
 </div>
+
+
 
 <%- flash.each do |name, msg| -%>
   <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
