@@ -1,9 +1,5 @@
 1) Sitemap
 
-1) How to change the root password for mysql (Change database.yml ?)
-You'll want to put the mysql root password in a file at /root/.my.cnf. Example:
-2) Set database.yml to ignore for github and check the secure way to use Capistrano to use
-database.yml on the server
 
 
 
