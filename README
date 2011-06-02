@@ -1,4 +1,42 @@
-1) Sitemap
+SEO Starter Guide
+
+1) The <title> tag should be placed within the <head> tag of the HTML document. Ideally, create a unique title for each page on your site. Choose a title that effectively communicates the topic of the page's content. Use brief, but descriptive titles
+
+2) The title for your homepage can list the name of your business and could include other information like the physical location of the business, its main offerings etc.
+
+3) A page's description meta tag is a sentence or two or a short paragraph. 
+The description meta tag is placed within the <head> tag of your HTML document.
+Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result. You could automatically generate description meta tags based on each page's content.
+
+4) Creating descriptive categories and filenames for the documents on 
+your website. Also, it can create easier, "friendlier" URLs.
+
+5) Prepare two sitemaps: one for users, one for search engines. A site map is a simple page on your site that displays the structure of your website, and usually consists of a hierarchical listing of the pages on your site. Visitors may visit this page if they are having problems finding pages on your site. 
+
+An XML Sitemap file, which you can submit through Google's Webmaster Tools, makes it easier for Google to discover the pages on your site. Sitemap Generator Script helps you create a Sitemap file for your site. To learn more Webmaster Help Center provides a useful guide.
+
+6) Create a simple directory structure. Use a directory structure that organizes your content well and makes it easy for visitors to know where 
+they're on your site. Try using your directory structure to indicate the type of content found at that URL.
+
+7) Allow for the possibility of a part of the URL being removed.
+
+------------------
+Structure for Articles
+
+1) Title : How to give a good title.
+
+2) First Paragraph : Clearly explain the benefit of reading the entire article in a short paragraph. It is a summary of what the page is about.
+
+3) Content must be well written and easy to follow.
+
+4) Use paragraph, subheading, bullet lists appropriately.
+
+5) Organize content by breaking it up into logical chunks. 
+
+6) Run through a spell checker. Check for grammatical mistakes.
+
+7) Provide two sample paraphrased articles as examples of how to do it.
+
 
 
 
@@ -17,8 +55,7 @@ Tasks to be delegated:
 
 1) Get help to make JQuery datepicker inline option work. Make the date default to today's date.
 2) Get help to create Digstyle theme for Kaminari Themes
-3) At least one recipient (To, Cc or Bcc) is required to send a message error. Test if sendmail
-config will fix the problem
+3) At least one recipient (To, Cc or Bcc) is required to send a message error. Test if sendmail config will fix the problem
 4) Drop shadow effect is missing for the content area
 5) Edit screen for admin layout has a different font for the tabs. 
 
