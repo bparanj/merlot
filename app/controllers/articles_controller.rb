@@ -15,6 +15,8 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    today = Date.today
+    @article.published_on = "#{today.month}/#{today.day}/#{today.year}"
   end
 
   def edit
