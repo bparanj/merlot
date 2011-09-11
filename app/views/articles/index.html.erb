@@ -20,6 +20,7 @@
 
 	<% if admin_signed_in? %>
 	    <p> <%= link_to 'Edit', edit_article_path(article) %> </p>
+		  <p> There are <%= @articles.size %> articles.</p>
 	<% end %>
 
 <% end %>
