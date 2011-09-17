@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
 
   def load_layout_customization
     @left_navigation = false
-    @right_navigation = false
+    @right_navigation = true
   end
   
   private
