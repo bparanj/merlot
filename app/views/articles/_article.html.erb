@@ -1,0 +1,21 @@
+
+<div class="article">
+	<div class="main">
+		<h2><%= link_to article.title, article %></h2>
+		<div class="description">
+			<%= raw(truncate(article.content, :length => 200, :omission => ' ...')) %>
+			<% if article.content.size > 200 %>
+				<%= link_to "(read more)", article %>
+			<% end %>
+		</div>		
+	</div>
+	<br/>
+	<div class="side">
+		<div class="published_at"> <%= article.published_on.to_s %> </div>
+	</div>
+
+</div>
+
+<% if admin_signed_in? %>
+    <p> <%= link_to 'Edit', edit_article_path(article) %> </p>
+<% end %>

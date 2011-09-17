@@ -12,4 +12,9 @@ class Article < ActiveRecord::Base
 
     Kaminari.paginate_array(results).page(p).per(5)
   end
+  
+  def self.ten_recent
+    find(:all, 
+         :order => "published_on desc", :limit => 10)    
+  end
 end
