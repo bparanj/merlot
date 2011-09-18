@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def layout_by_resource
-    if admin_signed_in?
+    if ("devise/sessions" == params[:controller]) || admin_signed_in? 
       "admin_layout"
     else
       "application"
@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
 
   def load_layout_customization
     @left_navigation = false
-    @right_navigation = true
+    @right_navigation = true if Rails.env.production?
   end
   
   private
