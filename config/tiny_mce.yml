@@ -4,7 +4,7 @@ theme: advanced
 theme_advanced_toolbar_location: top
 theme_advanced_toolbar_align: left
 gecko_spellcheck: true
-height: 400
+height: 1000
 width: 630
 plugins:
  - table
