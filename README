@@ -20,6 +20,8 @@ Write a description that would both inform and interest users if they saw your d
 
 An XML Sitemap file, which you can submit through Google's Webmaster Tools, makes it easier for Google to discover the pages on your site. Sitemap Generator Script helps you create a Sitemap file for your site. To learn more Webmaster Help Center provides a useful guide.
 
+https://github.com/lassebunk/dynamic_sitemaps
+
 6) Create a simple directory structure. Use a directory structure that organizes your content well and makes it easy for visitors to know where 
 they're on your site. Try using your directory structure to indicate the type of content found at that URL.
 

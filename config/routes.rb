@@ -1,5 +1,7 @@
 Merlot::Application.routes.draw do
   
+  match 'sitemap.xml' => 'sitemaps#sitemap'
+
   get "errors/fourzerofour"
   get "errors/fivehundred"
   get "accounts/index"
