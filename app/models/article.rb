@@ -8,13 +8,13 @@ class Article < ActiveRecord::Base
   def self.older_than_two_weeks(p)
      results = find(:all, 
                     :conditions => ["created_at > ?", 2.weeks.ago], 
-                    :order => "published_on desc")
+                    :order => "created_at desc")
 
     Kaminari.paginate_array(results).page(p).per(5)
   end
   
   def self.ten_recent
     find(:all, 
-         :order => "published_on desc", :limit => 10)    
+         :order => "created_at desc", :limit => 10)    
   end
 end
