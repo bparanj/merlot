@@ -12,7 +12,7 @@ SEO Starter Guide
 
 3) A page's description meta tag is a sentence or two or a short paragraph. [DONE]
 The description meta tag is placed within the <head> tag of your HTML document.
-Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result. You could automatically generate description meta tags based on each page's content.
+Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result. You could automatically generate description meta tags based on each page's content. [PENDING - Categories]
 
 4) Creating descriptive categories and filenames for the documents on your website. Also, it can create easier, "friendlier" URLs.
 
@@ -26,6 +26,8 @@ https://github.com/lassebunk/dynamic_sitemaps
 they're on your site. Try using your directory structure to indicate the type of content found at that URL.
 
 7) Allow for the possibility of a part of the URL being removed.
+
+http://lassebunk.dk/tag/seo/
 
 ------------------
 Structure for Articles
