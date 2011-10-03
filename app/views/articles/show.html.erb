@@ -15,3 +15,4 @@
 <% end %>
 
 <% content_for :title, @article.title %>
+<% content_for :meta_description,  raw(truncate(@article.content, :length => 500, :omission => ' ...')) %>

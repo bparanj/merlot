@@ -4,7 +4,8 @@
   <head>
   
     <title><%= yield(:title) %></title>
-
+		<meta name="description=" content='<%= yield(:meta_description) %>' >
+		
     <%= csrf_meta_tag %>
     <%= stylesheet_link_tag 'application', 'common' %>
  <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" %>

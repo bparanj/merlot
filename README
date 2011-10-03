@@ -10,12 +10,11 @@ SEO Starter Guide
 
 2) The title for your homepage can list the name of your business and could include other information like the physical location of the business, its main offerings etc.
 
-3) A page's description meta tag is a sentence or two or a short paragraph. [PENDING]
+3) A page's description meta tag is a sentence or two or a short paragraph. [DONE]
 The description meta tag is placed within the <head> tag of your HTML document.
 Write a description that would both inform and interest users if they saw your description meta tag as a snippet in a search result. You could automatically generate description meta tags based on each page's content.
 
-4) Creating descriptive categories and filenames for the documents on 
-your website. Also, it can create easier, "friendlier" URLs.
+4) Creating descriptive categories and filenames for the documents on your website. Also, it can create easier, "friendlier" URLs.
 
 5) Prepare two sitemaps: one for users, one for search engines. A site map is a simple page on your site that displays the structure of your website, and usually consists of a hierarchical listing of the pages on your site. Visitors may visit this page if they are having problems finding pages on your site. 
 
@@ -29,7 +28,7 @@ they're on your site. Try using your directory structure to indicate the type of
 ------------------
 Structure for Articles
 
-1) Title : How to give a good title.
+1) Title : How to give a good title. Use brief, but descriptive titles.
 
 2) First Paragraph : Clearly explain the benefit of reading the entire article in a short paragraph. It is a summary of what the page is about.
 
