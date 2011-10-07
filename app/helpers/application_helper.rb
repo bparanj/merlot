@@ -1,4 +1,5 @@
 module ApplicationHelper
+  include TweetButton
   
   def is_active?(page_name)
       # logger.info("Page name #{page_name}")

@@ -83,6 +83,7 @@ GEM
     tiny_mce (0.1.4)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
+    tweet-button (0.1.0)
     tzinfo (0.3.27)
     unicorn (3.6.1)
       kgio (~> 2.3)
@@ -104,4 +105,5 @@ DEPENDENCIES
   rails (= 3.0.7)
   sqlite3
   tiny_mce
+  tweet-button
   unicorn

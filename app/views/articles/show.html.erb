@@ -9,7 +9,10 @@
 
 <br/>
 
+<div> <%= tweet_button(:via => "CreditCardLogic", :url => polymorphic_url(@article), :text  => "Check this out!") %></script> </div>		
+		
 <%= link_to left_arrow("Back"), articles_path %> 
+
 <% if admin_signed_in? %>|
 <%= link_to 'Edit', edit_article_path(@article) %> 
 <% end %>

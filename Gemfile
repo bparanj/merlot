@@ -10,6 +10,7 @@ gem "tiny_mce"
 gem 'kaminari'
 gem 'friendly_id'
 gem 'exception_notification', :require => 'exception_notifier'
+gem 'tweet-button'
 
 # Deploy with Capistrano
 # gem 'capistrano'
