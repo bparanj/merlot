@@ -17,10 +17,12 @@ class ArticlesController < ApplicationController
     @article = Article.new
     today = Date.today
     @article.published_on = "#{today.month}/#{today.day}/#{today.year}"
+    @categories = Category.alphabetally_sorted
   end
 
   def edit
     @article = Article.find(params[:id])
+    @categories = Category.alphabetally_sorted
   end
 
   def create
