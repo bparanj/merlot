@@ -28,6 +28,10 @@ class ApplicationController < ActionController::Base
     @right_navigation = true if Rails.env.production?
   end
   
+  def verify_is_admin
+    redirect_to root_url unless admin_signed_in?
+  end
+  
   private
 
   def render_not_found(exception)

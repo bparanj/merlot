@@ -16,6 +16,11 @@
 		<%= f.label :published_on %><br />
 	    <%= f.text_field :published_on, :size => 15  %>
 	</p>
+	
+	<p>
+		<%= f.label :category %> <br/>
+		<%= f.select(:category_id, Category.all.map{|c| [c.name, c.id]}) %>
+	</p>
 	<p>
     	<%= f.submit 'Submit Article'%>		
 	</p>

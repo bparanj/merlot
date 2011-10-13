@@ -11,6 +11,7 @@ gem 'kaminari'
 gem 'friendly_id'
 gem 'exception_notification', :require => 'exception_notifier'
 gem 'tweet-button'
+gem "nifty-generators", :group => :development
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -34,3 +35,4 @@ group :development, :test do
 
 #   gem 'webrat'
 end
+# gem "mocha", :group => :test

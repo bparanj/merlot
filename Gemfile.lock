@@ -55,6 +55,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mysql2 (0.2.7)
+    nifty-generators (0.4.6)
     orm_adapter (0.0.4)
     polyglot (0.3.1)
     pony (1.2)
@@ -101,6 +102,7 @@ DEPENDENCIES
   jquery-rails
   kaminari
   mysql2 (< 0.3)
+  nifty-generators
   pony
   rails (= 3.0.7)
   sqlite3

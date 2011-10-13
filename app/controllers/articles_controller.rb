@@ -50,10 +50,6 @@ class ArticlesController < ApplicationController
     # @article.destroy
     redirect_to(articles_url)
   end
-    
-  def verify_is_admin
-    redirect_to root_url unless admin_signed_in?
-  end
   
   def set_created_by(article)
     if current_user

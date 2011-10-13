@@ -7,11 +7,11 @@
 			<% if article.content.size > 200 %>
 				<%= link_to "(read more)", article %>
 			<% end %>
-		</div>
-		<div> <%= tweet_button(:via => "CreditCardLogic", :url => polymorphic_url(article), :text  => "Check this out!") %></script> </div>		
+		</div>	
+		  <div> <%= tweet_button(:via => "CreditCardLogic", :url => polymorphic_url(article), :text  => "Check this out!") %></script> </div>		   
 	</div>
 	<br/>	
-
+	
 	<div class="side">
 		<div class="published_at"> <%= article.published_on.to_s %> </div>
 	</div>
