@@ -11,11 +11,13 @@ DynamicSitemaps::Sitemap.draw do
     url article_url(article), :last_mod => article.updated_at, :change_freq => 'monthly', :priority => 0.8
   end
 
-  # new_page!
+  new_page!
   
-  # autogenerate  :categories,
-  #               :last_mod => :updated_at,
-  #               :change_freq => 'weekly',
-  #               :priority => 0.8
-                  
+  autogenerate  :categories,
+                :last_mod => :updated_at,
+                :change_freq => 'monthly',
+                :priority => 0.8
+  
+
+         
 end

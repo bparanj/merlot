@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_filter :verify_is_admin
+  before_filter :verify_is_admin, :except => [:show, :index]
    
   def index
     @categories = Category.all
@@ -33,4 +33,8 @@ class CategoriesController < ApplicationController
     end
   end
   
+  def show
+    @category = Category.find(params[:id])    
+    @articles = @category.articles
+  end
 end

@@ -1,12 +1,16 @@
-<% title "Category" %>
+<% if admin_signed_in? %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @category.name %>
-</p>
+	<p>
+	  <strong>Name:</strong>
+	  <%= @category.name %>
+	</p>
 
-<p>
-  <%= link_to "Edit", edit_category_path(@category) %> |
-  <%= link_to "Destroy", @category, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", categories_path %>
-</p>
+	<p>
+	  <%= link_to "Edit", edit_category_path(@category) %> |
+	  <%= link_to "View All", categories_path %>
+	</p>
+ 
+<% end %>
+
+<%= render :partial => '/articles/article', :collection => @articles %>
+

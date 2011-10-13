@@ -4,10 +4,18 @@
   </tr>
   <% for category in @categories %>
     <tr>
-      <td><%= category.name %></td>
-      <td><%= link_to "Edit", edit_category_path(category) %></td>
+      <td>
+				<%= link_to category.name, category %>
+			</td>
+			<% if admin_signed_in? %>
+			  <td>
+			    <%= link_to "Edit", edit_category_path(category) %>
+			  </td>
+			<% end %>
     </tr>
   <% end %>
 </table>
 
-<p><%= link_to "New Category", new_category_path %></p>
+<% if admin_signed_in? %>
+  <p><%= link_to "New Category", new_category_path %></p>
+<% end %>

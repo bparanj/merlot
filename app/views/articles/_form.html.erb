@@ -1,12 +1,13 @@
-
 <%= form_for(@article) do |f| %>
   <% if @article.errors.any? %>
-	<%= render :partical => "shared/error_messages", :target => @article   %>
+	  <%= render :partical => "shared/error_messages", :target => @article   %>
   <% end %>
+
 	<p>
 		<%= f.label :title %><br />
 	    <%= f.text_field :title, :size => 120  %>
 	</p>	
+
 	<p>
 		<%= f.label :content %><br />
 	    <%= f.text_area :content, :rows => 25, :class => 'mceEditor' %>
@@ -21,10 +22,10 @@
 		<%= f.label :category %> <br/>
 		<%= f.select(:category_id, @categories.map{|c| [c.name, c.id]}) %>
 	</p>
+
 	<p>
     	<%= f.submit 'Submit Article'%>		
 	</p>
-
 
 <% end %>
 

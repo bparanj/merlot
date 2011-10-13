@@ -7,7 +7,7 @@ Merlot::Application.routes.draw do
   get "accounts/index"
 
   resources :articles
-  resources :categories, :only => [:index, :edit, :update, :new, :create] 
+  resources :categories 
 
   devise_for :users, :controllers => { :registrations => "registrations" }
   devise_for :admin
