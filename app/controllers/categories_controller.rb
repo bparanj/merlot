@@ -3,6 +3,8 @@ class CategoriesController < ApplicationController
    
   def index
     @categories = Category.all
+    # TODO : Delete after migrating old records
+    Category.find_each(&:save)
   end
     
   def new
