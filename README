@@ -1,4 +1,6 @@
-
+http://www.bingocardcreator.com/articles/rails-seo-tips.htm
+https://github.com/kpumuk/meta-tags
+https://github.com/mbleigh/acts-as-taggable-on
 
 
 
@@ -191,3 +193,10 @@ Identity Theft
 Eviction
 Foreclosure
 Debit Cards
+
+----------------------------------
+<p>
+	<%= f.label :published_on %><br />
+    <%= f.text_field :published_on, :size => 15  %>
+</p>
+----------------------------------

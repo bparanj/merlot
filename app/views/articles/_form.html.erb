@@ -9,22 +9,17 @@
 	</p>	
 
 	<p>
-		<%= f.label :content %><br />
-	    <%= f.text_area :content, :rows => 25, :class => 'mceEditor' %>
-	</p>
-		
-	<p>
-		<%= f.label :published_on %><br />
-	    <%= f.text_field :published_on, :size => 15  %>
-	</p>
-	
-	<p>
 		<%= f.label :category %> <br/>
 		<%= f.select(:category_id, @categories.map{|c| [c.name, c.id]}) %>
 	</p>
+	
+	<p>
+		<%= f.label :content %><br />
+	    <%= f.text_area :content, :rows => 25, :class => 'mceEditor' %>
+	</p>
 
 	<p>
-    	<%= f.submit 'Submit Article'%>		
+    	<%= f.submit 'Save'%>		
 	</p>
 
 <% end %>
