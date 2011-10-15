@@ -24,7 +24,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_layout_customization
-    @left_navigation = false
+    @left_navigation = true
     @right_navigation = true if Rails.env.production?
   end
   

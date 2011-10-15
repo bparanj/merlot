@@ -5,6 +5,7 @@
   
     <title><%= yield(:title) %></title>
 		<meta name="description=" content='<%= yield(:meta_description) %>' >
+		<%= yield(:fb_open_graph) %>
 		
     <%= csrf_meta_tag %>
     <%= stylesheet_link_tag 'application', 'common' %>
@@ -66,37 +67,21 @@
 		<div class="clearfix"></div>
 		<div class="fleft left-container">
 			
-			<% if @left_navigation %>
+	<% if @left_navigation %>
 		
 			<div class="left-content-container">
 				<h2>Categories</h2>
 				<div class="left-content">
-					<ul>
-						<li><a href="#">Test Category 1</a></li>
-						<li><a href="#">Test Category 2</a></li>
-						<li><a href="#">Test Category 3</a></li>
-						<li><a href="#">Test Category 4</a></li>
-						<li><a href="#">Test Category 5</a></li>
-						<li><a href="#">Test Category 6</a></li>
-						<li><a href="#">Test Category 7</a></li>
-						<li><a href="#">Test Category 8</a></li>
-						<li><a href="#">Test Category 9</a></li>
+					<ul>						
+						<% for category in Category.alphabetally_sorted %>
+							<li>
+										<%= link_to category.name, category %>
+							</li>			
+					  <% end %>					
 					</ul>
 				</div>	
 				<br/>
-				<h2>Become a Member</h2>
-				<div class="left-content">
-					<ul>
-						<li>
-						<a href="#">Sign up</a> for free membership and get notifications for members only free Ruby and Rails screencasts. <a href="#">Privacy</a> 
-						</li>
-					</ul>
-				</div>
-				<br/>
-				<h2>Rails MeetUp</h2>
-				<div class="left-content">
-					If you live in the bay area, check out Silicon Valley Ruby Meetup 
-				</div>
+
 				
 			</div>		
  
