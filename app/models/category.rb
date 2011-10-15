@@ -8,4 +8,13 @@ class Category < ActiveRecord::Base
   def self.alphabetally_sorted
     find(:all, :order => "name")
   end
+  
+  def self.list_for_navigation
+    result = []
+    list =  find(:all, :order => "name")
+    list.each do |category|
+      result << category if category.articles.count > 0
+    end
+    result
+  end
 end

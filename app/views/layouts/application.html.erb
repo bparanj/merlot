@@ -73,7 +73,7 @@
 				<h2>Categories</h2>
 				<div class="left-content">
 					<ul>						
-						<% for category in Category.alphabetally_sorted %>
+						<% for category in Category.list_for_navigation %>
 							<li>
 										<%= link_to category.name, category %>
 							</li>			
