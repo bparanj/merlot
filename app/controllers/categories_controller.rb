@@ -2,9 +2,11 @@ class CategoriesController < ApplicationController
   before_filter :verify_is_admin, :except => [:show, :index]
    
   def index
-    @categories = Category.all
-    # TODO : Delete after migrating old records
-    # Category.find_each(&:save)
+    if admin_signed_in?
+      @categories = Category.alphabetally_sorted
+    else
+      @categories = Category.list_for_navigation
+    end
   end
     
   def new

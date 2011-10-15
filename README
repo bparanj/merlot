@@ -238,3 +238,7 @@ Debit Cards
 </div>
 
 ----------------------------------
+Migrating old records 
+    Category.find_each(&:save)
+
+----------------------------------
