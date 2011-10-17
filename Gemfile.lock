@@ -1,3 +1,9 @@
+GIT
+  remote: git@github.com:brentmc79/canonical-url.git
+  revision: 7e7be6e5ecd9dd1ec5c4fe4513f84043dc5e6cbd
+  specs:
+    canonical-url (0.1.4)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -96,6 +102,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  canonical-url!
   devise
   exception_notification
   friendly_id

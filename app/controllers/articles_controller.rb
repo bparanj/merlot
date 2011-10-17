@@ -11,6 +11,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    canonical_url article_path(@article)
   end
 
   def new
