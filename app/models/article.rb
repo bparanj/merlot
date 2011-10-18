@@ -22,7 +22,8 @@ class Article < ActiveRecord::Base
   end
   
   def self.related(tag)
-    self.tagged_with([tag], :any => :true)
+    result = self.tagged_with([tag], :any => :true)
+    result.size > 1 ? result : []
   end
   
 end
