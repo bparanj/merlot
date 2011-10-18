@@ -18,7 +18,8 @@ Merlot::Application.routes.draw do
   resources :submissions, :only => [:new, :create] 
 
   root :to => 'home#index'
-
+  
+  match '/related/:tag' => 'articles#related', :as => :related_article
   match '/token' => 'home#token', :as => :token
   
   match '*a', :to => 'errors#fourzerofour'

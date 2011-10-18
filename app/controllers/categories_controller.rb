@@ -40,5 +40,9 @@ class CategoriesController < ApplicationController
   def show
     @category = Category.find(params[:id])    
     @articles = @category.articles
+    set_meta_tags :title => 'Credit Cards Logic',
+                   :description => 'Credit Cards Related Articles.',
+                   :noindex => true,
+                   :nofollow => true    					     
   end
 end

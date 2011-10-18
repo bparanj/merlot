@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     # customize these as much as you want, ie, different for every error or all the same
     rescue_from ActionController::UnknownAction, :with => :render_not_found
   end
-
+  
   protected
 
   def layout_by_resource

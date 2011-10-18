@@ -20,4 +20,12 @@ module ApplicationHelper
     raw("&larr #{text}")
   end
   
+  def related_articles(tag_list)
+    result = ''
+    tag_list.each_with_index do |tag, index|
+      result += link_to(tag, related_article_path(CGI::escape(tag))) 
+      result += ", " unless (index+1 == tag_list.size)
+    end
+    result[0..-3]
+  end
 end

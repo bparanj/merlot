@@ -1,5 +1,6 @@
-Link keywords to other articles and categories inside the site. Refer Mashable for example.
-Include a call to action at the end of the article. Related articles list, maybe other articles in the category etc. Check Mashable and other sites for ideas. 
+1. Link keywords to other articles and categories inside the site. Refer Mashable for example.
+2. Include a call to action at the end of the article. Related articles list, maybe other articles in the category etc. Check Mashable ideas. 
+3. acts_as_taggable_on - Display tags for all articles and allow users to click if it has atleast one article. Display all articles that is tagged with that tag. Make the result page noindex no follow.
 
 
 http://www.bingocardcreator.com/articles/rails-seo-tips.htm
@@ -7,7 +8,6 @@ https://github.com/kpumuk/meta-tags
 https://github.com/mbleigh/acts-as-taggable-on
 
 http://services.google.com/breeze/webmasters/googleforwebmasters/
-
 
 
 www.dailybingocards.com/bingo-cards/geography/european-capitals
@@ -25,8 +25,6 @@ Note that you will have to write custom routes to go with this, and you will hav
 Generating anonymous routes is very freaking expensive because Rails has to try generating every possible route you have listed. Use either named routes or helper/model methods if you've got lots of links on a page and are worried about performance.
 
 
-
-
 ---------------------------------------------------------------------------------------------------
 
 Category has_many :cards       #cards are grouped in categories like Rewards
@@ -38,11 +36,7 @@ match 'credit-cards/:category/:url', :to => 'cards#show'
 
 ---------------------------------------------------------------------------------------------------
 
-
 Fix the layout issue on the articles tab. Ads are at the bottom.
-
-
-
 
 
 SEO Starter Guide
@@ -246,3 +240,25 @@ Migrating old records
     Category.find_each(&:save)
 
 ----------------------------------
+
+<!-- 
+			<% if user_signed_in? -%>
+				<li>
+					<%= link_to 'My Profile', edit_user_registration_path, :class => is_active?("users/edit")  %>
+				</li>
+				<li>
+					<%= link_to 'Sign out', destroy_user_session_path %>
+				</li>
+		    <% else %>
+				<li>
+				  <%= link_to 'Sign up', new_user_registration_path, :class => is_active?("registrations") %> 			
+				</li>
+				
+				<li>
+			  	  <%= link_to 'Sign in', new_user_session_path, :class => is_active?("devise/sessions") %>	
+				</li>
+	        <% end -%>
+	 -->
+----------------------------------
+
+	

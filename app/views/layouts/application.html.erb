@@ -2,16 +2,13 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-  
-    <title><%= yield(:title) %></title>
-		<meta name="description=" content='<%= yield(:meta_description) %>' >
-		<%= yield(:fb_open_graph) %>
-		
-		<%= canonical_link_tag %>
+			<%= display_meta_tags :prefix => false, :separator => "" %>  
+			<%= yield(:meta_tags) %>
+			
     <%= csrf_meta_tag %>
     <%= stylesheet_link_tag 'application', 'common' %>
- <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" %>
- <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application", "rails" %>
+    <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js", "application", "rails" %>
 
     <%= yield(:head) %>
   <%= include_tiny_mce_if_needed %>
@@ -30,24 +27,9 @@
 				<%= link_to 'Articles', articles_path, :class => is_active?("articles") %>
 			</li>
 			<li>
-<!-- 
-			<% if user_signed_in? -%>
-				<li>
-					<%= link_to 'My Profile', edit_user_registration_path, :class => is_active?("users/edit")  %>
-				</li>
-				<li>
-					<%= link_to 'Sign out', destroy_user_session_path %>
-				</li>
-		    <% else %>
-				<li>
-				  <%= link_to 'Sign up', new_user_registration_path, :class => is_active?("registrations") %> 			
-				</li>
-				
-				<li>
-			  	  <%= link_to 'Sign in', new_user_session_path, :class => is_active?("devise/sessions") %>	
-				</li>
-	        <% end -%>
-	 -->
+
+
+
 	
 			<li>
 				<%= link_to 'Contact', new_feedback_url, :class => is_active?("feedbacks") %>

@@ -1,9 +1,3 @@
-GIT
-  remote: git@github.com:brentmc79/canonical-url.git
-  revision: 7e7be6e5ecd9dd1ec5c4fe4513f84043dc5e6cbd
-  specs:
-    canonical-url (0.1.4)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -34,6 +28,8 @@ GEM
       activemodel (= 3.0.7)
       activesupport (= 3.0.7)
     activesupport (3.0.7)
+    acts-as-taggable-on (2.1.1)
+      rails
     arel (2.0.9)
     babosa (0.3.4)
     bcrypt-ruby (2.1.4)
@@ -59,6 +55,8 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta-tags (1.2.4)
+      actionpack
     mime-types (1.16)
     mysql2 (0.2.7)
     nifty-generators (0.4.6)
@@ -102,12 +100,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  canonical-url!
+  acts-as-taggable-on (~> 2.1.0)
   devise
   exception_notification
   friendly_id
   jquery-rails
   kaminari
+  meta-tags
   mysql2 (< 0.3)
   nifty-generators
   pony

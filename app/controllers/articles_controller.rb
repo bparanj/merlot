@@ -11,7 +11,6 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
-    canonical_url article_path(@article)
   end
 
   def new
@@ -53,6 +52,17 @@ class ArticlesController < ApplicationController
     # @article.destroy
     redirect_to(articles_url)
   end
+  
+  def related
+    @articles = Article.related(CGI.unescape(params[:tag]))
+    @show_related = true
+    set_meta_tags :title => 'Credit Cards Logic',
+                  :description => 'Credit Cards Related Articles.',
+                  :noindex => true,
+                  :nofollow => true    					     
+  end
+  
+  private
   
   def set_created_by(article)
     if current_user

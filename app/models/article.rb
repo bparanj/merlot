@@ -1,5 +1,6 @@
 class Article < ActiveRecord::Base
   has_friendly_id :title, :use_slug => true
+  acts_as_taggable_on :tags
   
   belongs_to :category
     
@@ -19,4 +20,9 @@ class Article < ActiveRecord::Base
     find(:all, 
          :order => "created_at desc", :limit => 10)    
   end
+  
+  def self.related(tag)
+    self.tagged_with([tag], :any => :true)
+  end
+  
 end

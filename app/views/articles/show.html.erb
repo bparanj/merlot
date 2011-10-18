@@ -6,6 +6,9 @@
   <%= raw(@article.content) %>
 </p>
 
+<p>
+   <%= raw(related_articles(@article.tag_list)) %> 
+</p>
 
 <br/>
 
@@ -19,5 +22,23 @@
 	<%= link_to 'Edit', edit_article_path(@article) %> 
 <% end %>
 
-<% content_for :title, @article.title %>
-<% content_for :meta_description,  raw(truncate(@article.content, :length => 500, :omission => ' ...')) %>
+
+<% content_for :meta_tags do %>
+
+  <% if @show_related %>
+		<% set_meta_tags :title  => @article.title, 
+										 :description => raw(truncate(@article.content, :length => 500, :omission => ' ...')), 
+										 :noindex => true, 
+										 :nofollow => true %>
+	<% else %>
+	  	<% set_meta_tags :title  => @article.title, 
+											 :description => raw(truncate(@article.content, :length => 500, :omission => ' ...')),
+ 											 :canonical => article_path(@article),
+ 											 :open_graph => { :title => "Mashable", :type => 'blog', :url => 'www.creditcardslogic.com',
+												 								:image => 'http://www.image.com/dfasdfasdfasdfasdf.jpg',
+																				:site_name => 'Credit Cards Logic Site',
+																				:admins => "100000846404274",
+																				:description => "og_description"} %>
+	<%- end -%>
+	
+<%- end -%>

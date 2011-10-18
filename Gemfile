@@ -12,7 +12,8 @@ gem 'friendly_id'
 gem 'exception_notification', :require => 'exception_notifier'
 gem 'tweet-button'
 gem "nifty-generators", :group => :development
-gem 'canonical-url', :require => 'canonical_url', :git => 'git@github.com:brentmc79/canonical-url.git'
+gem 'acts-as-taggable-on', '~>2.1.0'
+gem 'meta-tags', :require => 'meta_tags'
 
 # Deploy with Capistrano
 # gem 'capistrano'

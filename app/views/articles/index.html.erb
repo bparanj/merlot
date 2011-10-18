@@ -4,4 +4,15 @@
 
 <%= render :partial => @articles %>
 
-<% content_for :title, "Articles" %>
+
+<% content_for :meta_tags do %>
+
+		<% set_meta_tags :title  => 'Credit Cards Logic', 
+										 :description => "Credit Cards Related Information...",
+										 :open_graph => { :title => "Credit Cards Logic", :type => 'blog', :url => 'www.creditcardslogic.com',
+											 								:image => 'http://www.creditcardslogic.com/ccl.jpg',
+																			:site_name => 'Credit Cards Logic Site',
+																			:admins => "100000846404274",
+																			:description => "Credit Cards Related Blog"} %>
+	
+<%- end -%>
