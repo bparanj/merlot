@@ -261,4 +261,7 @@ Migrating old records
 	 -->
 ----------------------------------
 
+The page failed to provide a valid list of administrators. It needs to specify the administrators using either a "fb:app_id" meta tag, or using a "fb:admins" meta tag to specify a comma-delimited list of Facebook users.
+
+
 	http://chaolam.wordpress.com/2011/08/03/229/

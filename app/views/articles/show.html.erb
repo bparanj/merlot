@@ -36,11 +36,11 @@
 	  	<% set_meta_tags :title  => @article.title, 
 											 :description => raw(truncate(@article.content, :length => 500, :omission => ' ...')),
  											 :canonical => article_path(@article),
- 											 :open_graph => { :title => "Mashable", :type => 'blog', :url => 'www.creditcardslogic.com',
-												 								:image => 'http://www.image.com/dfasdfasdfasdfasdf.jpg',
+ 											 :open_graph => { :title => "Credit Cards Logic", :type => 'blog', :url => 'www.creditcardslogic.com',
+												 								:image => 'http://www.creditcardslogic.com/ccl.jpg',
 																				:site_name => 'Credit Cards Logic Site',
 																				:admins => "100000846404274",
-																				:description => "og_description"} %>
+																				:description => "Credit Cards Related Articles"} %>
 	<%- end -%>
 	
 <%- end -%>
