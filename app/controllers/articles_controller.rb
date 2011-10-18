@@ -11,6 +11,7 @@ class ArticlesController < ApplicationController
 
   def show
     @article = Article.find(params[:id])
+    @fb_like_url = CGI::escape(request.url)
   end
 
   def new
