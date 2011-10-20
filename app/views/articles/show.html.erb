@@ -29,12 +29,12 @@
 
   <% if @show_related %>
 		<% set_meta_tags :title  => @article.title, 
-										 :description => raw(truncate(@article.content, :length => 160, :omission => ' ...')), 
+										 :description => truncate(@article.content, :length => 160, :omission => ' ...'), 
 										 :noindex => true, 
 										 :nofollow => true %>
 	<% else %>
 	  	<% set_meta_tags :title  => @article.title, 
-											 :description => raw(truncate(@article.content, :length => 160, :omission => ' ...')),
+											 :description => truncate(@article.content, :length => 160, :omission => ' ...'),
  											 :canonical => article_path(@article),
  											 :open_graph => { :title => "Credit Cards Logic", 
 																				:type => 'blog', 
