@@ -1,19 +1,10 @@
 <style>
-#nav a{display:block}
-#nav td{padding:0;text-align:center}
-.cur {font-weight:bold}
-.csb {background:url(http://www.google.co.jp/images/srpr/nav_logo27.png) no-repeat;overflow:hidden;background-position:0 0;height:40px;display:block}
-#nav {font-family: arial,sans-serif; font-size:small}
-#nav a:link {text-decoration:none; color:#4496d3}
-#nav a:hover {text-decoration:underline}
-#nav a:active {color:#c11}
-#nav a:visited {color:#2200C1}
-.b {font-weight:bold}
+.pagination{padding:.3em;margin:.3em; font: 13.34px helvetica,arial,freesans,clean,sans-serif;}
+.pagination a{padding:.1em .3em;margin:.2em;border:1px solid #aad;text-decoration:none;color:#369;}
+.pagination a:hover,.pagination a:active{border:1px solid #369;color:#000;}
+.pagination span.current{padding:.1em .3em;margin:.2em;border:1px solid #369;font-weight:bold;background-color:#369;color:#FFF;}
+.pagination span.disabled{padding:.1em .3em;margin:.2em;border:1px solid #eee;color:#ddd;}
 </style>
 <%= paginator.render do -%>
-<table id="nav" style="border-collapse:collapse;text-align:left;direction:ltr;margin:17px auto 0"><tbody><tr valign="top">
-<td class="b"><%= prev_page_tag -%></td>
-<% each_page.select(&:inside_window?).each do |page| %><%= page_tag page -%><% end %>
-<td class="b"><%= next_page_tag -%></td>
-</tr></tbody></table>
-<% end %>
+<div class="pagination"><%= prev_page_tag -%><%= next_page_tag -%></div>
+<% end -%>
