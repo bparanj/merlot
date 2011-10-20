@@ -31,7 +31,7 @@ module ApplicationHelper
       end
       result += ", " unless (index+1 == tag_list.size)        
     end
-    result[0..-3]
+    result[0..-1]
   end
 
   def facebook_like
