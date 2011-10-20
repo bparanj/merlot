@@ -4,7 +4,7 @@
 
 <%= render :partial => @articles %>
 
-<%= paginate @articles %>
+<%= paginate @articles, :window => 10, :outer_window => -1 %>
 
 <% content_for :meta_tags do %>
 
