@@ -1,5 +1,9 @@
 Implement pagination on the articles page.
+When FB like button is clicked, make the clicked link display all the details of that specific article instead of generic message.
 
+
+
+------------------------------------------------------------------------------------------------------------------------------
 
 Dynamic Sitemaps is a plugin for Ruby on Rails that enables you to easily create flexible, dynamic sitemaps.
 It creates sitemaps in the http://sitemaps.org standard which is supported by several crawlers including Google, Bing, and Yahoo.
