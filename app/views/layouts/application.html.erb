@@ -7,9 +7,6 @@
 			<meta property="fb:admins" content="100000846404274"/>
 			<meta property="fb:app_id" content="199420523464691"/>
 			
-			
-			
-			
     <%= csrf_meta_tag %>
     <%= stylesheet_link_tag 'application', 'common' %>
     <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/redmond/jquery-ui.css" %>
@@ -19,8 +16,6 @@
   <%= include_tiny_mce_if_needed %>
   </head>
   <body>
-
-<%= render :partial => "/shared/fb_js_sdk"  %>
 
 <div id="Header">
 	<div class="navigation">&nbsp;</div>
@@ -44,8 +39,6 @@
 		</ul>
 	</div>
 </div>
-
-
 
 <%- flash.each do |name, msg| -%>
   <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>

@@ -5,3 +5,5 @@ $(function(){
   $("#article_published_on").datepicker({ defaultDate: +7 });
 
 });
+
+

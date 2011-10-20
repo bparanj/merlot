@@ -3,7 +3,7 @@ class Article < ActiveRecord::Base
   acts_as_taggable_on :tags
   
   belongs_to :category
-    
+        
   def self.two_weeks_count
     count('id', :conditions => ["created_at > ?", 2.weeks.ago])
   end  

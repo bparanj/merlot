@@ -13,9 +13,9 @@
 <br/>
 
 <div> 
-	<%= tweet_button(:via => "CreditCardLogic", :url => polymorphic_url(@article), :text  => "Check this out!") %>
-	
-  <div class="fb-like" data-href="<%= @fb_like_url %>" data-send="true" data-width="450" data-show-faces="false"></div>
+	<%= tweet_button(:via => "CreditCardLogic", :url => polymorphic_url(@article), :text  => "Check this out!") %>	
+	<%= facebook_like %>
+
 </div>		
 		
 <%= link_to left_arrow("Back"), articles_path %> 
