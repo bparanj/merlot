@@ -7,7 +7,9 @@
 				<%= link_to "(read more)", article %>
 			<% end %>
 		</div>	
-		  <div> <%= tweet_button(:via => "CreditCardLogic", :url => polymorphic_url(article), :text  => "Check this out!") %></script> </div>		   
+		
+		<%= render :partial => "/shared/social_buttons", :locals => { :article => article }  %>
+
 	</div>
 	<br/>	
 	

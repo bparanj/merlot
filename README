@@ -1,7 +1,17 @@
+Delegate to Elance
+------------------------------------------------------------------------------------------------------------------------------
+1) Style Social Buttons (similar to Mashable site)
+2) Style pagination (similar to Github blog pagination)
+
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
 1. Link keywords to other articles and categories inside the site. Refer Mashable for example.
 2. Include a call to action at the end of the article. Related articles list, maybe other articles in the category etc. Check Mashable ideas. 
-3. acts_as_taggable_on - Display tags for all articles and allow users to click if it has atleast one article. Display all articles that is tagged with that tag. Make the result page noindex no follow.
+3. Display all articles that is tagged with that tag. Test the result page noindex no follow.
 4. Include javascript to count the number of words
+5. Stop compete.com subscription before Nov (what date?)
 
 http://www.bingocardcreator.com/articles/rails-seo-tips.htm
 https://github.com/kpumuk/meta-tags

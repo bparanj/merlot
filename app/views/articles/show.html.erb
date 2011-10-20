@@ -12,11 +12,7 @@
 
 <br/>
 
-<div> 
-	<%= tweet_button(:via => "CreditCardLogic", :url => polymorphic_url(@article), :text  => "Check this out!") %>	
-	<%= facebook_like %>
-
-</div>		
+<%= render :partial => "/shared/social_buttons", :locals => { :article => @article }  %>
 		
 <%= link_to left_arrow("Back"), articles_path %> 
 
