@@ -38,3 +38,8 @@ group :development, :test do
 #   gem 'webrat'
 end
 # gem "mocha", :group => :test
+
+
+group :production do
+  gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
