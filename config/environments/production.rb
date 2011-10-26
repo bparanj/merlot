@@ -49,4 +49,10 @@ Merlot::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  config.action_mailer.default_url_options = { :host => 'localhost:8080' }
+  config.middleware.use ExceptionNotifier, 
+                        :sender_address =>  'noreply@creditcardslogic.com',
+                        :exception_recipients => 'bparanj@gmail.com'
+  
 end

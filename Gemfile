@@ -10,10 +10,16 @@ gem "tiny_mce"
 gem 'kaminari'
 gem 'friendly_id'
 gem 'exception_notification', :require => 'exception_notifier'
+gem 'letter_opener', :group => :development
 gem 'tweet-button'
 gem "nifty-generators", :group => :development
 gem 'acts-as-taggable-on', '~>2.1.0'
 gem 'meta-tags', :require => 'meta_tags'
+
+# Mongrel Server w Dependencies
+gem 'mongrel', '1.2.0.pre2'
+gem 'cgi_multipart_eof_fix'
+gem 'fastthread'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -35,8 +41,7 @@ group :development, :test do
 # Use unicorn as the web server
   gem 'unicorn'
 
-#   gem 'webrat'
-end
+# gem 'webrat'
 # gem "mocha", :group => :test
 
 

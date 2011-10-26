@@ -24,6 +24,10 @@ Merlot::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
   
   config.action_mailer.default_url_options = { :host => 'localhost:8080' }
-  
+  config.middleware.use ExceptionNotifier, 
+                        :sender_address =>  'noreply@creditcardslogic.com',
+                        :exception_recipients => 'bparanj@gmail.com'
+      
+  config.action_mailer.delivery_method = :letter_opener
 end
 
