@@ -38,8 +38,9 @@ gem 'fastthread'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development, :test do
-# Use unicorn as the web server
+  # Use unicorn as the web server
   gem 'unicorn'
+end
 
 # gem 'webrat'
 # gem "mocha", :group => :test
