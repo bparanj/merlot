@@ -22,11 +22,11 @@ h3{margin:0px 0 0 0;color:#666;font-size:14px;padding:0}
 .fright{float:right;}
 
 #Header{background-color: #036;}
-#Wrapper{padding:12px 23px 0 30px;margin:0 auto}
+#Wrapper{padding:12px 23px 0 1px;margin:0 auto}
 .ClearAll{padding:0;clear:both;font-size:0}
 
-.left-container{width:20%;}
-.center-container{width:54%;background-color:#fff;margin:0 3% 0 3%;-moz-box-shadow:3px 3px 4px #bbb;}
+.left-container{width:14%;}
+.center-container{width:54%;background-color:#fff;margin:0 0.25% 0 0.25%;-moz-box-shadow:3px 3px 4px #bbb;}
 .right-container{width:20%;}
 
 .left-content-container{border:solid 1px #7590ae;min-height:650px;}
