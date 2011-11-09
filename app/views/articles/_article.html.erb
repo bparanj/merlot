@@ -8,7 +8,11 @@
 			<% end %>
 		</div>	
 		
-		<%= render :partial => "/shared/social_buttons", :locals => { :article => article }  %>
+		<% unless admin_signed_in? %>
+		    <%= render :partial => "/shared/social_buttons", :locals => { :article => article }  %>
+		<% end %>
+		
+		
 
 	</div>
 	<br/>	

@@ -10,6 +10,12 @@
 	  <%= link_to "View All", categories_path %>
 	</p>
  
+<% else %>
+
+	<p>
+	  <strong><%= @category.name %> </strong>
+	</p>
+
 <% end %>
 
 <%= render :partial => '/articles/article', :collection => @articles %>

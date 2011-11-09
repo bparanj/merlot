@@ -21,9 +21,9 @@ http://www.alistbloggingbootcamps.com/alist-blogger-club-join/
 ------------------------------------------------------------------------------------------------------------------------------
 Backup existing database: 
 ------------------------------------------------------------------------------------------------------------------------------
-$ mysqldump -u root RoRConsole_development > rordb.sql
+$ mysqldump -u root merlot > merlot.sql
 Populate new database:
-$ mysql -uroot RoRConsole_dev_custom_skins < rordb.sql
+$ mysql -uroot merlot_production < merlot.sql
 
 ------------------------------------------------------------------------------------------------------------------------------
 
