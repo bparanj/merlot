@@ -10,13 +10,13 @@
 	  <%= link_to "View All", categories_path %>
 	</p>
  
-<% else %>
-
-	<p>
-	  <strong><%= @category.name %> </strong>
-	</p>
-
 <% end %>
+
+<% if @outliner %>
+	<%= render :partial => '/shared/outliner', :locals  => { :outliner => @outliner }  %>
+<% end %>
+
+<p>Related Articles:</p>
 
 <%= render :partial => '/articles/article', :collection => @articles %>
 

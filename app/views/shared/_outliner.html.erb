@@ -1,0 +1,31 @@
+
+<div class="article">
+	<div class="main">
+		
+		<fieldset>
+			<h2><%= raw(outliner.title) %></h2>
+
+				<%= raw(outliner.content) %>			
+		
+		</fieldset>
+		
+		<% unless admin_signed_in? %>
+		    <%= render :partial => "/shared/social_buttons", :locals => { :article => outliner }  %>
+		<% end %>
+		
+		
+
+	</div>
+	<br/>	
+	
+	<div class="side">
+		<div class="published_at"> <%= outliner.published_on.to_s %> </div>
+	</div>
+	
+</div>
+
+<% if admin_signed_in? %>
+    <p> <%= link_to 'Edit', edit_article_path(outliner) %> </p>
+<% end %>
+
+
