@@ -42,7 +42,7 @@ class CategoriesController < ApplicationController
     @articles = @category.articles.where(:outline => false)
     @outliner = @category.articles.where(:outline => true).first
     set_meta_tags :title => 'Credit Cards Logic',
-                   :description => 'Credit Cards Related Articles.',
+                   :description => 'Free credit help based on your goals.',
                    :noindex => true,
                    :nofollow => true    					     
   end
