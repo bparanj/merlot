@@ -57,7 +57,7 @@ class ArticlesController < ApplicationController
     @articles = Article.related(CGI.unescape(params[:tag]))
     @show_related = true
     set_meta_tags :title => 'Credit Cards Logic',
-                  :description => 'Credit Cards Related Articles.',
+                  :description => 'Free credit help based on your goals.',
                   :noindex => true,
                   :nofollow => true    					     
   end
