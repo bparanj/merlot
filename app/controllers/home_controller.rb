@@ -8,6 +8,9 @@ class HomeController < ApplicationController
   def token
   end
   
+  def privacy  
+  end
+  
   def fb_channel
     # response.headers['Pragma'] = 'public'
     # expires_in 1.year, :public=>true
