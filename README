@@ -1,15 +1,5 @@
-Do You Need To Fix Your Credit Score Quickly?
-IS THIS ALREADY PUBLISHED.
+Understanding and Building or Rebuilding your Credit is incomplete (on 5th page)
 
-Understanding and Building or Rebuilding your Credit
-is incomplete (on 5th page)
-
---------------------------------------------------------------------------------------------------------------------------------
-Examples for how to mix lower and upper case in titles: http://www.amazon.com/Brian-Tracy/e/B001H6OMRI/ref=ntt_athr_dp_pel_pop_1
---------------------------------------------------------------------------------------------------------------------------------
-Make the user goals on the home page link to User Goal articles.
-
-What are the steps involved in a mortgage foreclosure – Part II (replace this with new content - already merged)
 Things to Know About Shopping for Life Insurance is duplicated (Two articles with same title or same content?)
 
 There is lot of Bankruptcy related articles overlap
@@ -17,7 +7,6 @@ Does case matter for tags and finding articles by tag? If so, convert everything
 
 Bala7 folder contents - double check article includes beginning to end
 
-http://www.alistbloggingbootcamps.com/alist-blogger-club-join/
 ------------------------------------------------------------------------------------------------------------------------------
 Backup existing database: 
 ------------------------------------------------------------------------------------------------------------------------------
@@ -26,11 +15,20 @@ Populate new database:
 $ mysql -uroot merlot_production < merlot.sql
 
 ------------------------------------------------------------------------------------------------------------------------------
-
 Delegate to Elance
 ------------------------------------------------------------------------------------------------------------------------------
 1) Style Social Buttons (similar to Mashable site)
 2) Style pagination (similar to Github blog pagination)
+3) Fix the layout issue on the articles tab. Ads are at the bottom.
+
+------------------------------------------------------------------------------------------------------------------------------
+Tasks to be delegated:
+------------------------------------------------------------------------------------------------------------------------------
+1) Get help to make JQuery datepicker inline option work. Make the date default to today's date.
+2) Get help to create Digstyle theme for Kaminari Themes
+3) At least one recipient (To, Cc or Bcc) is required to send a message error. Test if sendmail config will fix the problem
+4) Drop shadow effect is missing for the content area
+5) Edit screen for admin layout has a different font for the tabs. 
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,7 +36,8 @@ Delegate to Elance
 2. Include a call to action at the end of the article. Related articles list, maybe other articles in the category etc. Check Mashable ideas. 
 3. Display all articles that is tagged with that tag. Test the result page noindex no follow.
 4. Include javascript to count the number of words
-5. Stop compete.com subscription before Nov (what date?)
+5. Make the user goals on the home page link to User Goal articles.
+6. RSS feeds using Feedburner
 
 http://www.bingocardcreator.com/articles/rails-seo-tips.htm
 https://github.com/kpumuk/meta-tags
@@ -61,8 +60,7 @@ Note that you will have to write custom routes to go with this, and you will hav
 
 Generating anonymous routes is very freaking expensive because Rails has to try generating every possible route you have listed. Use either named routes or helper/model methods if you've got lots of links on a page and are worried about performance.
 
-
----------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 Category has_many :cards       #cards are grouped in categories like Rewards
 Card belongs_to :category       #shows one set of credit cards, like Capital One Credit Card
@@ -71,13 +69,9 @@ match 'credit-cards/:category', :to => 'category#show'
 match 'credit-cards/:category/:url', :to => 'cards#show'
 
 
----------------------------------------------------------------------------------------------------
-
-Fix the layout issue on the articles tab. Ads are at the bottom.
-
-
+------------------------------------------------------------------------------------------------------------------------------
 SEO Starter Guide
-
+------------------------------------------------------------------------------------------------------------------------------
 1) The <title> tag should be placed within the <head> tag of the HTML document. Ideally, create a unique title for each page on your site. Choose a title that effectively communicates the topic of the page's content. Use brief, but descriptive titles - DONE
 
 2) The title for your homepage can list the name of your business and could include other information like the physical location of the business, its main offerings etc.
@@ -101,10 +95,15 @@ they're on your site. Try using your directory structure to indicate the type of
 
 http://lassebunk.dk/tag/seo/
 
-------------------
+------------------------------------------------------------------------------------------------------------------------------
 Structure for Articles
 
 1) Title : How to give a good title. Use brief, but descriptive titles.
+
+--------------------------------------------------------------------------------------------------------------------------------
+Examples for how to mix lower and upper case in titles: http://www.amazon.com/Brian-Tracy/e/B001H6OMRI/ref=ntt_athr_dp_pel_pop_1
+--------------------------------------------------------------------------------------------------------------------------------
+
 
 2) First Paragraph : Clearly explain the benefit of reading the entire article in a short paragraph. It is a summary of what the page is about.
 
@@ -121,22 +120,7 @@ Structure for Articles
 8) Link to "How to write clearly" book and the PDF book on writing in iPad
 
 
----------------------------
-
-
-
-
----------------------------
-
-Tasks to be delegated:
-
-1) Get help to make JQuery datepicker inline option work. Make the date default to today's date.
-2) Get help to create Digstyle theme for Kaminari Themes
-3) At least one recipient (To, Cc or Bcc) is required to send a message error. Test if sendmail config will fix the problem
-4) Drop shadow effect is missing for the content area
-5) Edit screen for admin layout has a different font for the tabs. 
-
----------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 2) Moonshine recipe for Amazon backups
 3) Test Moonshine recipe for Virtual hosts 
@@ -158,7 +142,7 @@ password        = <secret>
 You can chmod this file 600 so only root can read it.
 
 
-------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 Email: Writing guidelines, themes, topics, keywords, categories. Training video on how to use the
 publishing platform.
@@ -183,17 +167,17 @@ Secret URLs
 'Sign up as Admin' : http://localhost:8080/admin/sign_up
 'Sign in as Admin' : http://localhost:8080/admin/sign_in
 
-
+------------------------------------------------------------------------------------------------------------------------------
 DO NOT DO
-
+------------------------------------------------------------------------------------------------------------------------------
 1) SEO fields in the form - not required
 2) Test how to deploy multiple virtual hosts using Moonshine
 This may not be required. Since Google ranking algorithm penalizes same IP used by several domains.
 
 
-
+------------------------------------------------------------------------------------------------------------------------------
 COMMANDS
-
+------------------------------------------------------------------------------------------------------------------------------
 sudo /etc/init.d/apache2 restart
 
 
@@ -203,11 +187,9 @@ Admin.create(:email => "bparanj@gmail.com", :encrypted_password => "$2a$10$5VdUJ
   <p><%= link_to 'Token Authentication Example', token_path(:auth_token => current_user.authentication_token) %></p>
 <% end -%>
 
-
-Latest Commit Message:
-
+------------------------------------------------------------------------------------------------------------------------------
 Tests to Optimize Revenue:
-
+------------------------------------------------------------------------------------------------------------------------------
 1) How to make the right side Google ads stay put when page is scrolled
 http://www.gaugeus.com/ramblings/2007/10/27/building-a-restful-ruby-on-rails-application-from-the-ground-up-with-a-site-wide-layout
 
@@ -224,38 +206,14 @@ http://www.gaugeus.com/ramblings/2007/10/27/building-a-restful-ruby-on-rails-app
 
  -->
 
-----------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 Done
 
-Categories
-
-Credit Score 
-Credit Report
-Bankruptcy
-Debt Collection
-Debt Management
-Banking
-Credit Laws
-Credit Repair
-Credit Cards
-Personal Loan
-Home Loan
-Car Loan
-Student Loans
-Unsecured Credit
-Personal Finance
-Identity Theft
-Eviction
-Foreclosure
-Debit Cards
-
-
-----------------------------------
 <p>
 	<%= f.label :published_on %><br />
     <%= f.text_field :published_on, :size => 15  %>
 </p>
-----------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 
 <h2>Become a Member</h2>
@@ -272,11 +230,11 @@ Debit Cards
 	If you live in the bay area, check out Silicon Valley Ruby Meetup 
 </div>
 
-----------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 Migrating old records 
     Category.find_each(&:save)
 
-----------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 <!-- 
 			<% if user_signed_in? -%>
@@ -296,7 +254,7 @@ Migrating old records
 				</li>
 	        <% end -%>
 	 -->
-----------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 The page failed to provide a valid list of administrators. It needs to specify the administrators using either a "fb:app_id" meta tag, or using a "fb:admins" meta tag to specify a comma-delimited list of Facebook users.
 
