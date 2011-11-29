@@ -38,6 +38,7 @@ Tasks to be delegated:
 4. Include javascript to count the number of words
 5. Make the user goals on the home page link to User Goal articles.
 6. RSS feeds using Feedburner
+7. Write a test case for Mercury editor for Rails 3. Refer railscasts.
 
 http://www.bingocardcreator.com/articles/rails-seo-tips.htm
 https://github.com/kpumuk/meta-tags
@@ -141,7 +142,6 @@ password        = <secret>
 
 You can chmod this file 600 so only root can read it.
 
-
 ------------------------------------------------------------------------------------------------------------------------------
 
 Email: Writing guidelines, themes, topics, keywords, categories. Training video on how to use the
@@ -150,17 +150,12 @@ publishing platform.
 
 Version 2
 
-1) Search feature
-2) Sell leads through Commission Junction
-3) News tab
-4) Tags
-5) RSS feeds
-6) Social media buttons (A/B Test before to decide the best design)
-7) Setup Google analytics
-8) Copy writing guidelines (Link at the bottom and why write for us?)
+1) Sell leads through Commission Junction
+2) News tab
+3) Social media buttons (A/B Test before to decide the best design)
+4) Copy writing guidelines (Link at the bottom and why write for us?)
 
 Editorial guidelines: http://ezinearticles.com/editorial-guidelines.html
-
 
 Secret URLs
 

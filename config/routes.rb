@@ -23,6 +23,7 @@ Merlot::Application.routes.draw do
   match '/token' => 'home#token', :as => :token
   match '/fb_channel', :controller=>'home', :action=>'fb_channel'
   match '/privacy' => 'home#privacy'
+  match '/terms' => 'home#terms'
   
   match '*a', :to => 'errors#fourzerofour'
 end
