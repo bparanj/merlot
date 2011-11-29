@@ -1,11 +1,6 @@
 Understanding and Building or Rebuilding your Credit is incomplete (on 5th page)
-
 Things to Know About Shopping for Life Insurance is duplicated (Two articles with same title or same content?)
-
 There is lot of Bankruptcy related articles overlap
-Does case matter for tags and finding articles by tag? If so, convert everything to lowercase before saving.
-
-Bala7 folder contents - double check article includes beginning to end
 
 ------------------------------------------------------------------------------------------------------------------------------
 Backup existing database: 
@@ -49,7 +44,6 @@ http://services.google.com/breeze/webmasters/googleforwebmasters/
 
 www.dailybingocards.com/bingo-cards/geography/european-capitals
 www.dailybingocards.com/bingo-cards/geography
-
 
 Note that you will have to write custom routes to go with this, and you will have to be explicit about creating URLs with url_for and the like. I like naming mine so that I can generate them quickly and never get an ugly route by mistake:
 
@@ -125,16 +119,9 @@ Examples for how to mix lower and upper case in titles: http://www.amazon.com/Br
 
 2) Moonshine recipe for Amazon backups
 3) Test Moonshine recipe for Virtual hosts 
-4) Tango calendar and Pollen Allergy Alert apps deployed as virtual hosts on the same Linode instance
-5) Image album for use in (Real Estate site, Child / Pet adoption site etc). Zip code based search.
-6) Track Indian Restaurants and grade on authenticity
-7) Scaled down version of pagerduty.com
-8) Ruby mentorship site. Connect companies, students and mentors
-9) Free recycling - zip based search (Connect People)
-10) Rezume.com blaster with viral email for free accounts
-11) Pizza parlour and Small restaurants CMS
+4) Image album for use in (Real Estate site, Child / Pet adoption site etc). Zip code based search.
+5) Track Indian Restaurants and grade on authenticity
 
-2 Public calendars free as a demo (Tango festival calendar and USA holidays), private calendars upto 5 is $5 / month. Use it to build habits, scheduling, Tax deductible expenses etc.
 
 # cat /root/my.cnf
 [client]

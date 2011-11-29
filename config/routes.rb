@@ -6,8 +6,11 @@ Merlot::Application.routes.draw do
   get "errors/fivehundred"
   get "accounts/index"
 
-  resources :articles
   resources :categories 
+  
+  resources :articles do
+    get 'page/:page', :action => :index, :on => :collection
+  end
 
   devise_for :users, :controllers => { :registrations => "registrations" }
   devise_for :admin
