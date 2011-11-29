@@ -17,7 +17,7 @@ module ApplicationHelper
   end
 
   def left_arrow(text)
-    raw("&larr #{text}")
+    raw("&larr; #{text}")
   end
 
   def related_articles(tag_list)
