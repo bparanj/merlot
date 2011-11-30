@@ -182,8 +182,12 @@ http://www.gaugeus.com/ramblings/2007/10/27/building-a-restful-ruby-on-rails-app
 
 4) ZestCash, prosper
 
+------------------------------------------------------------------------------------------------------------------------------
+<p class="p1"><strong><a name="apply_for_credit_card" id="apply_for_credit_card">Apply for a Credit Card</a> </strong></p>
 
+<a href="categories/credit-card#apply_for_credit_card">Apply for a Credit Card</a> 
 
+------------------------------------------------------------------------------------------------------------------------------
 <!-- 
 <%= link_to 'Sign up', new_user_registration_path %> today to submit articles.
 
