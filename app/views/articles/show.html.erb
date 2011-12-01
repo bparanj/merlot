@@ -25,12 +25,12 @@
 
   <% if @show_related %>
 		<% set_meta_tags :title  => @article.title, 
-										 :description => truncate(@article.content, :length => 160, :omission => ' ...'), 
+										 :description => truncate(@article.content, :length => 360, :omission => ' ...'), 
 										 :noindex => true, 
 										 :nofollow => true %>
 	<% else %>
 	  	<% set_meta_tags :title  => @article.title, 
-											 :description => truncate(@article.content, :length => 160, :omission => ' ...'),
+											 :description => truncate(@article.content, :length => 360, :omission => ' ...'),
  											 :canonical => article_path(@article),
  											 :open_graph => { :title => "Credit Cards Logic", 
 																				:type => 'blog', 
@@ -38,7 +38,7 @@
 												 								:image => 'http://www.creditcardslogic.com/ccl.jpg',
 																				:site_name => 'Credit Cards Logic Site',
 																				:admins => "100000846404274",
-																				:description => truncate(@article.content, :length => 160, :omission => ' ...')} %>
+																				:description => truncate(@article.content, :length => 360, :omission => ' ...')} %>
 	<%- end -%>
 	
 <%- end -%>
