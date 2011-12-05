@@ -62,6 +62,17 @@ class ArticlesController < ApplicationController
                   :nofollow => true    					     
   end
   
+  def feed
+    @title = "Credit Cards Logic Atom Feed"
+    @articles = Article.order("updated_at desc")
+    @updated = @articles.first.updated_at unless @articles.empty?
+
+    respond_to do |format|
+      format.atom { render :layout => false }
+      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+    end
+  end
+  
   private
   
   def set_created_by(article)

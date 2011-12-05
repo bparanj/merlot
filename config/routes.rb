@@ -27,6 +27,7 @@ Merlot::Application.routes.draw do
   match '/fb_channel', :controller=>'home', :action=>'fb_channel'
   match '/privacy' => 'home#privacy'
   match '/terms' => 'home#terms'
+  match '/feed' => 'articles#feed', :as => :feed, :defaults => { :format => 'atom' }
   
   match '*a', :to => 'errors#fourzerofour'
 end
