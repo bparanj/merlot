@@ -68,8 +68,13 @@ class ArticlesController < ApplicationController
     @updated = @articles.first.updated_at unless @articles.empty?
 
     respond_to do |format|
-      format.atom { render :layout => false }
-      format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }
+      if request.env['HTTP_USER_AGENT'] =~ /feedburner/i
+        format.atom { render :layout => false }
+        format.rss { redirect_to feed_path(:format => :atom), :status => :moved_permanently }        
+      else
+        format.atom { redirect_to 'http://feeds.feedburner.com/CreditCardsLogicAtomFeed' }
+        format.rss { redirect_to 'http://feeds.feedburner.com/CreditCardsLogicAtomFeed', :status => :moved_permanently }        
+      end
     end
   end
   
