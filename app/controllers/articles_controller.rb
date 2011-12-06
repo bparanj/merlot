@@ -64,7 +64,7 @@ class ArticlesController < ApplicationController
   
   def feed
     @title = "Credit Cards Logic Atom Feed"
-    @articles = Article.order("updated_at desc")
+    @articles = Article.limit(25).order("updated_at desc")
     @updated = @articles.first.updated_at unless @articles.empty?
 
     respond_to do |format|
