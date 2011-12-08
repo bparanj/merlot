@@ -477,3 +477,19 @@ task :generate_links => :environment do
   end
   
 end
+
+desc "Generate hyperlinks for all articles"
+task :generate_hyperlinks => :environment do
+  articles = Article.all
+
+  # <table>
+  # <tr>
+  # <td> Article Title</td>
+  # <td>Link</td>
+  # </tr>
+  
+  articles.each do |article|
+    puts "<tr><td>#{article.title}</td>  <td>http://www.creditcardslogic.com/articles/#{CGI.escape(article.cached_slug)}</td></tr>"      
+  end
+  # </table>
+end
